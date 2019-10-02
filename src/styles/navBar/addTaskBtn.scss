@@ -1,0 +1,11 @@
+.add-task-btn{
+    position: absolute;
+    bottom: -25px;
+    left: calc(50% - 97px/2);
+    transition: .5s;
+    &:hover, &:focus{
+        outline: none;
+        transform: rotate(45deg);
+    }
+}
+

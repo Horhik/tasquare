@@ -1,0 +1,30 @@
+.priority{
+  width: 70px;
+  height: 70px;
+  background: $main-color;
+  border-radius: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $light-color;
+  font-family: $main-font;
+  text-decoration: none;
+  font-size: 38px ;
+  box-sizing: border-box;
+  transition: .5s;
+  &:hover, &:focus{
+    outline: none;
+    transform: scale(0.9);
+  }
+  &:disabled{
+    opacity: .4;
+  }
+  &--inner{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+  }
+}
+
