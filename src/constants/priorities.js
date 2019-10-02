@@ -1,0 +1,6 @@
+export const priorities = {
+    IU: "IMPORTANT_URGENCY",
+    IN: "IMPORTANT_NOT_URGENCY",
+    NU: "NOT_IMPORTANT_URGENCY",
+    NN: "NOT_IMPORTANT_NOT_URGENCY"
+};
