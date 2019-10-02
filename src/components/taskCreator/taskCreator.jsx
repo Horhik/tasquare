@@ -14,7 +14,7 @@ class taskCreator extends React.Component{
                     <TaskSettings/>
                     <TaskTags/>
                 </div>
-                <button className="task-creator__send">
+                <button className=" task-creator__send">
                     {send}
                 </button>
             </section>

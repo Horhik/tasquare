@@ -1,0 +1,18 @@
+.task-creator__heading{
+  background-color: transparent;
+  border: 0;
+  font-family: $main-font;
+  font-size: 22px;
+  padding: 5px 0;
+  color: $dark-font;
+  width: 75vw;
+  &::placeholder{
+    color: $dark-font;
+    opacity: .7;
+    font-family: $main-font;
+    font-size: 20px;
+  }
+  &:focus{
+    outline: none;
+  }
+}

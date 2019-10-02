@@ -10,7 +10,7 @@ const {IU, IN, NU, NN} = priorities;
 class TaskSettings extends React.Component {
     render() {
         return(
-            <ul className="ts--wrapper">
+            <ul className="task-settings">
                 <li>
                     <SetReminder/>
                 </li>

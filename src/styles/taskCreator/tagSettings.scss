@@ -1,0 +1,33 @@
+.task-settings{
+  display: flex;
+  list-style: none;
+  margin: 10px 0 ;
+  padding: 0;
+  margin-bottom: 0;
+
+}
+.task-setting{
+  background-color: $button-background;
+  border: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  font-size: 16px;
+  font-family: $main-font;
+  color: $main-color;
+  border-radius: 5px;
+  margin-right: 5px;
+  transition: .5s;
+  &:focus, &:focus path{
+    outline: none;
+    background-color: $main-color;
+    color: $light-color;
+    fill: $light-color;
+  }
+  &:active{
+    opacity: .7;
+  }
+}

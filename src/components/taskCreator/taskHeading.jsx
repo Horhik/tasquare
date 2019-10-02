@@ -4,7 +4,10 @@ import {connect} from 'react-redux';
 class TaskHeading extends React.Component {
     render() {
         return(
-            <input type="text"/>
+            <input
+                placeholder={"Task"}
+                type="text"
+                className={'task-creator__heading'}/>
         )
     }
 }

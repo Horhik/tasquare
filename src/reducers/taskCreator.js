@@ -1,4 +1,5 @@
 import {priorities as pr} from './../constants/priorities';
+import {OPEN_TASK_CREATOR} from "../constants/taskCreatorActions";
 const initialState = {
     isOpen: false,
     taskText: '',
@@ -10,6 +11,12 @@ const initialState = {
     showTagBar: false
 };
 const taskCreator = (state = initialState, action) => {
-    return state
+    switch (action.type) {
+
+        case OPEN_TASK_CREATOR:
+            return {...state, isOpen: true}
+        default:
+            return state
+    }
 }
 export default taskCreator;

@@ -1,0 +1,29 @@
+.task-creator{
+  background: var(--fields-color);
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 10px 10px 5px;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+.task-creator__send{
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  margin-left: -40px;
+  padding: 0;
+  transition: .5s;
+  &:focus{
+    outline: none;
+    transform: scale(0.94);
+  }
+  &:active{
+    transform: translateX(100px);
+  }
+}
+@import './heading';
+@import './tagSettings';
