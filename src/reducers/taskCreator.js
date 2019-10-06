@@ -12,6 +12,7 @@ const initialState = {
     dateOfCreate: new Date(),
     showTagBar: false,
     focusOnHeading: false,
+    id: '',
 };
 const taskCreator = (state = initialState, action) => {
     switch (action.type) {

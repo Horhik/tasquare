@@ -27,7 +27,6 @@ class TaskHeading extends React.Component {
         if(this.props.send === GETTING_READY){
             // const heading = this.self.current.value;
             // this.props.sendTask({text: heading})
-            console.log(this.self.current.value)
             this.props.updateState({taskText: this.self.current.value})
             this.props.sendState(READY)
         }
@@ -37,7 +36,6 @@ class TaskHeading extends React.Component {
            }
     }
     input(e){
-        console.log(e.target.value)
          this.setState({headingText: e.target.value})
         //heading state move to parent
         this.props.text(this.state.headingText)

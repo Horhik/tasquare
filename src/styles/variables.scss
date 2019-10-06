@@ -1,9 +1,10 @@
 :root{
   --fields-color: #E8E8E8;
+  --main-color: 274
 }
 
 $main-font: 'Sanchez', serif;
-$main-color: #850EE2;//#2F69FF;
+$main-color: hsl(var(--main-color), 88%, 47%);//#2F69FF;
 $dark-font:  #3F3F3F;
 $light-color: #ffffff;
 $button-background: #C4C4C4;

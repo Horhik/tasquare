@@ -12,14 +12,10 @@ class taskCreator extends React.Component{
 
     sendTask(state){
         this.props.sendState(state)
-        console.log(this.props.send)
         //wait then sendState will be equal READY
         setTimeout(() => {
-            console.log(this.props.send)
             if (this.props.send === READY){
-                console.log(this.props.taskCreator)
                 this.props.sendTask(this.props.taskCreator)
-                console.log(store.getState())
                 this.props.resetCreator()
             }
         }, 0)

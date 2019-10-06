@@ -19,6 +19,9 @@
   &:disabled{
     opacity: .4;
   }
+  &--selected{
+    background-color: red;
+  }
   &--inner{
     display: flex;
     list-style: none;
