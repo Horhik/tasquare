@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9eb47730-e2c1-4c89-98cd-dc7405e701be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/actions/userActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/task/taskList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/taskListConstants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/svg/logo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/date.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/date.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/priority.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/priority.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/taskCreator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/taskCreator.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/taskHeading.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/taskHeading.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/taskCreator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/taskCreator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/userDataReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/userDataReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/header/priority.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/header/priority.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +113,7 @@
       <workItem from="1570292390712" duration="8005000" />
       <workItem from="1570302268535" duration="20655000" />
       <workItem from="1570359301952" duration="258000" />
-      <workItem from="1570359874392" duration="4100000" />
+      <workItem from="1570359874392" duration="4719000" />
     </task>
     <servers />
   </component>
