@@ -1,7 +1,7 @@
 import React from 'react'
 
 export const addTaskBtn =  (
-    <svg width={99} height={99}>
+    <svg width={108} height={108}>
         <path
             d="M99 49.5C99 76.838 76.838 99 49.5 99S0 76.838 0 49.5 22.162 0 49.5 0 99 22.162 99 49.5z"
             fill="#fff"

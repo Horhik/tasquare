@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9eb47730-e2c1-4c89-98cd-dc7405e701be" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/task/task.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/task/task.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svg/completeButton.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/task/taskList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/task/taskList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/taskCreator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/taskCreator.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/userDataReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/userDataReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/basic.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/basic.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/task/heading.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/task/heading.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/task/status.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/task/status.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/navBarIcons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/navBarIcons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -92,8 +106,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.priority" />
         <item itemvalue="npm.build" />
+        <item itemvalue="Node.js.priority" />
       </list>
     </recent_temporary>
   </component>
@@ -113,7 +127,8 @@
       <workItem from="1570292390712" duration="8005000" />
       <workItem from="1570302268535" duration="20655000" />
       <workItem from="1570359301952" duration="258000" />
-      <workItem from="1570359874392" duration="4719000" />
+      <workItem from="1570359874392" duration="6896000" />
+      <workItem from="1570372048703" duration="4392000" />
     </task>
     <servers />
   </component>
@@ -132,16 +147,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/task/taskList.jsx</url>
-          <line>8</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

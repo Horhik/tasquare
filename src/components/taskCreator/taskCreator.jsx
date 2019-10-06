@@ -24,7 +24,7 @@ class taskCreator extends React.Component{
         return (
             <section className={"task-creator"}>
                 <div
-                    // onClick={() => this.props.focusOnHeading}
+                    onClick={this.props.focusOnHeading}
                     className={"task-creator--inner"}>
                     <TaskHeading/>
                     <TaskSettings/>

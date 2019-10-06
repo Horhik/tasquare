@@ -1,0 +1,24 @@
+.task__complete{
+  background-color: transparent;
+  border: 0;
+  margin-bottom: -8px;
+  &:focus{
+      outline: none;
+  }
+
+}
+.status--complete{
+  opacity: 0;
+  .task__complete:focus &{
+    animation: complete .7s;
+  }
+}
+@keyframes complete {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+
+}
