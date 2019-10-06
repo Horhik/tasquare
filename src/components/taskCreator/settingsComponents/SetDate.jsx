@@ -3,9 +3,11 @@ import {calendar} from "../../../svg/navBarIcons";
 
 const SetDate = (props) =>{
     return(
-        <button className="task-setting">
-            {calendar}
-        </button>
+        <li key={'task-calendar'}>
+            <button className="task-setting">
+                {calendar}
+            </button>
+        </li>
     )
 };
 export default SetDate

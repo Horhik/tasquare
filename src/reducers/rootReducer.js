@@ -1,8 +1,10 @@
 import {combineReducers} from "redux";
 import taskCreator from "./taskCreator";
+import userData from "./userDataReducer";
 
 
 const rootReducer = combineReducers({
-    taskCreator
+    userData,
+    taskCreator,
 })
 export default rootReducer

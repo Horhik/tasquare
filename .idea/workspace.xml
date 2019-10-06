@@ -2,22 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9eb47730-e2c1-4c89-98cd-dc7405e701be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/actions/taskCreatorActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/taskCreatorActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/taskCreator/heading.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/taskCreator/tagSettings.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/taskCreator/taskCreator.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/userDataReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navBar/addTaskButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navBar/addTaskButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/taskCreatorActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/taskCreatorActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/AddTags.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/AddTags.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/SetDate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/SetDate.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/SetPriority.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/SetPriority.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/SetReminder.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/SetReminder.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/taskCreator/taskCreator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/taskCreator.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/taskCreator/taskHeading.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/taskHeading.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/taskCreator/taskSettings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/taskSettings.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/taskCreatorActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/taskCreatorActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/rootReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/taskCreator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/taskCreator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/navBar/addTaskBtn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/navBar/addTaskBtn.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/navBar/navBar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/navBar/navBar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/basic.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/basic.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/taskCreator/tagSettings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/taskCreator/tagSettings.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/taskCreator/taskCreator.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/taskCreator/taskCreator.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/navBarIcons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/navBarIcons.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +44,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="true" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -109,7 +112,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569972216871</updated>
-      <workItem from="1569972218949" duration="19233000" />
+      <workItem from="1569972218949" duration="20234000" />
+      <workItem from="1570155621448" duration="2897000" />
+      <workItem from="1570243135067" duration="10764000" />
+      <workItem from="1570292390712" duration="8005000" />
+      <workItem from="1570302268535" duration="11270000" />
     </task>
     <servers />
   </component>
@@ -121,7 +128,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

@@ -7,31 +7,18 @@ import SetDate from './settingsComponents/SetDate'
 import AddTags from './settingsComponents/AddTags'
 const {IU, IN, NU, NN} = priorities;
 
+
 class TaskSettings extends React.Component {
     render() {
         return(
             <ul className="task-settings">
-                <li>
                     <SetReminder/>
-                </li>
-                <li>
                     <SetDate/>
-                </li>
-                <li>
                     <AddTags/>
-                </li>
-                <li>
-                        <SetPriority priority={IU}/>
-                </li>
-                <li>
-                        <SetPriority priority={IN}/>
-                </li>
-                <li>
-                        <SetPriority priority={NU}/>
-                </li>
-                <li>
-                        <SetPriority priority={NN}/>
-                </li>
+                    <SetPriority checked={true} priority={IU}/>
+                    <SetPriority priority={IN}/>
+                    <SetPriority priority={NU}/>
+                    <SetPriority priority={NN}/>
             </ul>
         )
     }
