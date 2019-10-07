@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux';
 import store from "../../store";
-import {sendState, updateState} from "../../actions/taskCreatorActions";
+import {sendState, updateState, focusOnHeading} from "../../actions/taskCreatorActions";
 import {GETTING_READY, READY} from "../../constants/taskCreatorActions";
 
 class TaskHeading extends React.Component {
@@ -45,7 +45,6 @@ class TaskHeading extends React.Component {
             <input
                 ref={this.self}
                 placeholder={"Task"}
-                // onChange={(e) => this.input(e)}
                 type="text"
                 className={'task-creator__heading'}/>
         )
@@ -60,6 +59,7 @@ export default connect(state => (
 ),
     {
         sendState,
-        updateState
+        updateState,
+        focusOnHeading
 
     })(TaskHeading )

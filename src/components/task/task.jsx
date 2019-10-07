@@ -4,7 +4,6 @@ import completeButton from "../../svg/completeButton";
 class Task extends React.Component{
     constructor(props){
         super(props)
-
     }
     componentDidMount() {
         console.log(this.props)

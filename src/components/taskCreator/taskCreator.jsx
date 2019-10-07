@@ -22,7 +22,9 @@ class taskCreator extends React.Component{
     }
     render() {
         return (
-            <section className={"task-creator"}>
+            <form
+                onSubmit={() =>this.sendTask(GETTING_READY) }
+                className={"task-creator"}>
                 <div
                     onClick={this.props.focusOnHeading}
                     className={"task-creator--inner"}>
@@ -31,11 +33,11 @@ class taskCreator extends React.Component{
                     <TaskTags/>
                 </div>
                 <button
-                    onClick={() =>this.sendTask(GETTING_READY) }
+                   type="submit"
                     className=" task-creator__send">
                     {send}
                 </button>
-            </section>
+            </form>
         );
     }
 }
