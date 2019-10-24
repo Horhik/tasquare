@@ -1,8 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9eb47730-e2c1-4c89-98cd-dc7405e701be" name="Default Changelist" comment="">
+    <list default="true" id="8420f9f3-59bc-445a-b3a7-5ff5ae286fb4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Tag.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/AllUserTags.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/CreateNewTag.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/TagBar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/taskCreator/TagSelector.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tasquare.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tasquare.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/taskCreatorActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/taskCreatorActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/userActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/userActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/date.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/date.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/priority.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/priority.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navBar/addTaskButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navBar/addTaskButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navBar/navBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navBar/navBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navBar/pomodoro.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navBar/pomodoro.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navBar/search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navBar/search.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/task/task.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/task/task.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/task/taskList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/task/taskList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/AddTags.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/AddTags.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/SetDate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/SetDate.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/SetPriority.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/SetPriority.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/SetReminder.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/SetReminder.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/taskCreator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/taskCreator.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/taskHeading.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/taskHeading.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/taskSettings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/taskSettings.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/taskTags.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/taskTags.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/priorities.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/priorities.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/taskCreatorActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/taskCreatorActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/rootReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/taskCreator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/taskCreator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/userDataReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/userDataReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/basic.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/basic.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/header/priority.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/header/priority.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/navBar/addTaskBtn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/navBar/addTaskBtn.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/navBar/navBar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/navBar/navBar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/task/heading.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/task/heading.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/task/status.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/task/status.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/task/task.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/task/task.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/taskCreator/heading.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/taskCreator/heading.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/taskCreator/tagSettings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/taskCreator/tagSettings.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/taskCreator/taskCreator.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/taskCreator/taskCreator.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/completeButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/completeButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/navBarIcons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/navBarIcons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/pomodoro.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/pomodoro.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,39 +71,23 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="SCSS File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1RchJ3dNIritkx4YRMKJQbryoHx" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectId" id="1S0td7fxzoFSR9N071N6MG8mBcT" />
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="full.screen.before.presentation.mode" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/taskCreator/settingsComponents" />
-      <recent name="$PROJECT_DIR$/src/components/navBar" />
-    </key>
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -56,43 +101,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Debug Application">
-    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
-      <method v="2" />
-    </configuration>
-    <configuration name="priority" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" working-dir="$PROJECT_DIR$/src">
-      <method v="2" />
-    </configuration>
-    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="npm start" type="js.build_tools.npm">
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="start" />
       </scripts>
       <node-interpreter value="project" />
+      <package-manager value="npm" />
       <envs />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="JavaScript Debug.Debug Application" />
-      <item itemvalue="Node.js.priority" />
-      <item itemvalue="npm.build" />
-      <item itemvalue="npm.npm start" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
-        <item itemvalue="Node.js.priority" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -101,19 +124,24 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9eb47730-e2c1-4c89-98cd-dc7405e701be" name="Default Changelist" comment="" />
-      <created>1569972216871</created>
+      <changelist id="8420f9f3-59bc-445a-b3a7-5ff5ae286fb4" name="Default Changelist" comment="" />
+      <created>1570712425799</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1569972216871</updated>
-      <workItem from="1569972218949" duration="20234000" />
-      <workItem from="1570155621448" duration="2897000" />
-      <workItem from="1570243135067" duration="10764000" />
-      <workItem from="1570292390712" duration="8005000" />
-      <workItem from="1570302268535" duration="20655000" />
-      <workItem from="1570359301952" duration="258000" />
-      <workItem from="1570359874392" duration="6896000" />
-      <workItem from="1570372048703" duration="5330000" />
+      <updated>1570712425799</updated>
+      <workItem from="1570712431102" duration="1809000" />
+      <workItem from="1571248861072" duration="97000" />
+      <workItem from="1571375854291" duration="6729000" />
+      <workItem from="1571859975738" duration="1938000" />
+      <workItem from="1571922906876" duration="17000" />
+      <workItem from="1571922947451" duration="10000" />
+      <workItem from="1571923488915" duration="178000" />
+      <workItem from="1571923683029" duration="143000" />
+      <workItem from="1571923844739" duration="491000" />
+      <workItem from="1571924386246" duration="69000" />
+      <workItem from="1571934969517" duration="1233000" />
+      <workItem from="1571936281269" duration="82000" />
+      <workItem from="1571936386485" duration="4590000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,52 @@
+.tag-bar {
+  position: absolute;
+  display: flex;
+  background-color: var(--fields-color);
+  left: 30%;
+  bottom: 140px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: -3px 3px 5px .5px rgba(0, 0, 0, .3);
+}
+
+.tag-bar__text {
+  color: var(--light-darken-color);
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+.tag-bar--inner {
+  display: flex;
+  align-items: center;
+}
+
+.tag-bar__user-tags {
+  margin: 10px;
+}
+
+.tag-bar__tag-creator {
+  flex-direction: column;
+}
+
+.tag-bar__button {
+  background-color: transparent;
+  border: 0px;
+  margin: 0;
+  padding: 0;
+}
+.tag__on-creating{
+  border-width: 3px;
+  display: inline-block;
+  text-align: center;
+  padding: 3px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  border-style: solid;
+  box-sizing: border-box;
+  max-width: 30vw;
+  word-wrap: break-word;
+  max-height: 50vh;
+  overflow: scroll;
+}

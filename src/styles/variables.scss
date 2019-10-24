@@ -1,11 +1,14 @@
-:root{
+:root {
   --fields-color: #E8E8E8;
   --main-color: 274;
-  --second-color:  #E0E0E0;
+  --second-color: #E0E0E0;
+  --light-darken-color: #a0a0a0;
+
 }
 
-$main-font: 'Sanchez', serif;
-$main-color: hsl(var(--main-color), 88%, 47%);//#2F69FF;
-$dark-font:  #3F3F3F;
+$main-font: 'Sanchez',
+serif;
+$main-color: hsl(var(--main-color), 88%, 47%); //#2F69FF;
+$dark-font: #3F3F3F;
 $light-color: #ffffff;
 $button-background: #C4C4C4;

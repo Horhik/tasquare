@@ -1,13 +1,27 @@
-import React from 'react'
-import {tag} from "../../../svg/navBarIcons";
+import React, {useState} from 'react';
+import { tag } from '../../../svg/navBarIcons';
+import {addTag} from "../../../actions/taskCreatorActions";
+import {connect} from 'react-redux';
 
-const AddTags = (props) =>{
-    return(
-        <li key={"task-tag"}>
-            <button className="task-setting">
-                {tag}
-            </button>
-        </li>
-    )
+function  AddTags (props ) {
+    // let className = 'task-setting ';
+    const [className, modifyClass] = useState('task-setting ')
+    function  addTag(){
+       props.addTag()
+        // className += ' task-setting--selected'
+        modifyClass(className + ' task-setting--selected')
+        console.log(className)
+    }
+  return (
+    <li key={'task-tag'}>
+      <button
+          onClick={addTag}
+          type="button" className={className}>
+        {tag}
+      </button>
+    </li>
+  );
 };
-export default AddTags
+export default connect(null, {
+    addTag
+})(AddTags);

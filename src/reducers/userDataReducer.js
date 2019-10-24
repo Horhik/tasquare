@@ -1,7 +1,7 @@
-import {NOT_READY, SEND_TASK} from "../constants/taskCreatorActions";
-import {priorities as pr, priorities} from "../constants/priorities";
+import { SEND_TASK} from "../constants/taskCreatorActions";
+import { priorities} from "../constants/priorities";
 import {CHANGE_SHOW_PRIORITY_FILTER} from "../constants/taskListConstants";
-const {IU, IN, NU, NN} = priorities
+const {IU} = priorities
 const uuid = require('uuid/v4')
 const initialState = {
     tags: [],

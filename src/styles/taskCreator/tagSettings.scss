@@ -32,6 +32,14 @@
   &:active{
     opacity: .7;
   }
+  &--selected{
+    background-color: $main-color;
+    color: $light-color;
+    fill: $light-color;
+    & svg path{
+      fill: $light-color
+    }
+  }
 
   &__radio:focus  ~ label{
     outline: none;

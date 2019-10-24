@@ -2,10 +2,6 @@ import React from 'react'
 import {connect} from 'react-redux'
 import completeButton from "../../svg/completeButton";
 class Task extends React.Component{
-    constructor(props){
-        super(props)
-
-    }
     componentDidMount() {
         console.log(this.props)
     }
