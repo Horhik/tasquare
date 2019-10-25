@@ -34,7 +34,7 @@ class CreateNewTag extends React.Component{
             <Tag color={this.state.tagColor.hsl.h}/>
             <HuePicker
                 color={this.state.tagColor}
-                onChange={(e) => this.setColor(e)} width={'40vw'} />
+                onChange={(e) => this.setColor(e)} width={'50vw'} />
           </div>
         ) : (
           <button

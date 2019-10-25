@@ -8,7 +8,8 @@ import {
   CHANGE_SEND_STATE,
   RESET_TASK_CREATOR,
   CREATE_NEW_TAG,
-    PRINTING_TAG_TEXT
+  PRINTING_TAG_TEXT,
+  APPEND_NEW_TAG
 } from './../constants/taskCreatorActions';
 export const openTaskCreator = payload => ({
   type: OPEN_TASK_CREATOR,
@@ -39,10 +40,15 @@ export const createNewTag = () => ({
   type: CREATE_NEW_TAG
 });
 
-export const printTextToTag = (payload) => ({
+export const printTextToTag = payload => ({
   type: PRINTING_TAG_TEXT,
   payload
-})
+});
+
+export const appendNewTag = payload => ({
+  type: APPEND_NEW_TAG,
+  payload
+});
 //usuall actions
 export const sendTask = task => ({
   type: SEND_TASK,
@@ -52,7 +58,8 @@ export const sendTask = task => ({
 export const resetCreator = () => ({
   type: RESET_TASK_CREATOR
 });
-export const updateState = payload => ({
+export const updateState = (payload, locate) => ({
   type: UPDATE_STATE,
-  payload
+  payload,
+  locate
 });

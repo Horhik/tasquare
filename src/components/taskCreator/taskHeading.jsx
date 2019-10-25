@@ -5,8 +5,8 @@ import {
   sendState,
   updateState,
   focusOnHeading,
-    addTag,
-    printTextToTag
+  addTag,
+  printTextToTag
 } from '../../actions/taskCreatorActions';
 import { GETTING_READY, READY } from '../../constants/taskCreatorActions';
 
@@ -14,9 +14,10 @@ class TaskHeading extends React.Component {
   constructor(props) {
     super(props);
     this.self = React.createRef();
-    this.input = this.input.bind(this)
+    this.input = this.input.bind(this);
     this.state = {
-      headingText: ''
+      headingText: '',
+      tagText: ''
     };
   }
   focusing() {
@@ -41,34 +42,38 @@ class TaskHeading extends React.Component {
     if (store.getState().taskCreator.focusOnHeading) {
       this.focusing();
     }
+    if (this.props.taskCreator.showTagBar && !this.props.creator.createNewTag) {
+      const text = this.self.current.value;
+      if (text.length === 0 || text[text.length - 1] !== '#') {
+        this.self.current.value += ' #';
+      }
+    }
   }
   input(e) {
+    this.props.updateState({ taskText: e.target.value });
     const input = e.target;
     if (
       input.value[input.value.length - 1] === '#' &&
       input.value[input.value.length - 2] === ' '
     ) {
-      console.log("showingTagVar");
       this.props.addTag();
     }
-    if(this.props.taskCreator.showTagBar){
-        const text = input.value.split('#')[1];
-      console.log(text)
-      if(this.props.creator.createNewTag){
-        this.props.printTextToTag(text)
+    if (this.props.taskCreator.showTagBar) {
+      const text = input.value.split('#')[1];
+      console.log(text);
+      if (this.props.creator.createNewTag) {
+        this.props.printTextToTag(text);
       }
     }
   }
-  submitTag() {
-    //  if()
-  }
+  submitTag() {}
   render() {
     return (
       <input
-        onSubmit={this.submitTag}
         ref={this.self}
         placeholder={'Task'}
         type="text"
+        value={this.props.taskCreator.taskText}
         onInput={e => this.input(e)}
         className={'task-creator__heading'}
       />
@@ -87,7 +92,6 @@ export default connect(
     updateState,
     focusOnHeading,
     addTag,
-    printTextToTag,
-
+    printTextToTag
   }
 )(TaskHeading);

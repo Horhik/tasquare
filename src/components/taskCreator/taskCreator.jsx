@@ -4,14 +4,16 @@ import TaskHeading from './taskHeading';
 import TaskSettings from './taskSettings';
 import TaskTags from './taskTags';
 import { send } from './../../svg/navBarIcons';
+import uuid from 'uuid/v4';
 import {
   focusOnHeading,
   sendState,
   sendTask,
-  resetCreator
+  resetCreator,
+  appendNewTag
 } from './../../actions/taskCreatorActions';
 import { GETTING_READY, READY } from '../../constants/taskCreatorActions';
-import TagBar from "./settingsComponents/TagBar";
+import TagBar from './settingsComponents/TagBar';
 
 class taskCreator extends React.Component {
   sendTask(state) {
@@ -33,21 +35,22 @@ class taskCreator extends React.Component {
       }
     }, 0);
   }
+  submit(e) {
+    e.preventDefault();
+    if (this.props.taskCreator.showTagBar) {
+      this.props.appendNewTag(`#tag:$${uuid('v4')}`);
+    } else {
+      this.sendTask(GETTING_READY);
+    }
+  }
   render() {
-    console.log( this.props.taskCreator)
     return (
       <form
         //prevent submit and reload  on click
-        onSubmit={e => {
-          e.preventDefault();
-          this.sendTask(GETTING_READY);
-        }}
+        onSubmit={e => this.submit(e)}
         className={'task-creator'}
       >
-        {this.props.taskCreator.showTagBar ?
-            <TagBar/>
-            : ''
-        }
+        {this.props.taskCreator.showTagBar ? <TagBar /> : ''}
         <div
           onClick={this.props.focusOnHeading}
           className={'task-creator--inner'}
@@ -66,12 +69,14 @@ class taskCreator extends React.Component {
 export default connect(
   state => ({
     taskCreator: state.taskCreator,
-    send: state.taskCreator.sendState
+    send: state.taskCreator.sendState,
+    creator: state.taskCreator.tagCreator
   }),
   {
     focusOnHeading,
     sendState,
     sendTask,
-    resetCreator
+    resetCreator,
+    appendNewTag
   }
 )(taskCreator);

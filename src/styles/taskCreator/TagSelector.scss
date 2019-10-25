@@ -2,7 +2,7 @@
   position: absolute;
   display: flex;
   background-color: var(--fields-color);
-  left: 30%;
+  left: 20%;
   bottom: 140px;
   padding: 10px;
   border-radius: 10px;
@@ -45,8 +45,8 @@
   font-weight: bold;
   border-style: solid;
   box-sizing: border-box;
-  max-width: 30vw;
+  max-width: 48vw;
   word-wrap: break-word;
   max-height: 50vh;
-  overflow: scroll;
+  overflow: auto;
 }

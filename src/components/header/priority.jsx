@@ -32,8 +32,6 @@ class Priority extends  React.Component {
     };
         const priority = _priority()
         this.setState({priority : priority})
-        console.log(priority)
-        console.log(this.state.priority)
     }
     changeFilter(){
         this.props.changeFilterPriority(this.state.priority);

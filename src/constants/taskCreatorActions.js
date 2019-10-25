@@ -12,6 +12,8 @@ export const SEARCH_USER_TAGS = 'SEARCH_USER_TAGS';
 export const CREATE_NEW_TAG = 'CREATE_NEW_TAG';
 //print text tag on tagCreator to tag
 export const PRINTING_TAG_TEXT = 'PRINTING_TAG_TEXT ';
+//append new tag to creation task Field
+export const APPEND_NEW_TAG = 'APPEND_NEW_TAG ';
 
 export const NOT_READY = 0;
 export const GETTING_READY = 1;

@@ -10,7 +10,6 @@ function  AddTags (props ) {
        props.addTag()
         // className += ' task-setting--selected'
         modifyClass(className + ' task-setting--selected')
-        console.log(className)
     }
   return (
     <li key={'task-tag'}>

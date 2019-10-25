@@ -8,8 +8,18 @@ import {
   RESET_TASK_CREATOR,
   NOT_READY,
   ADD_TASK_TAG,
-  CREATE_NEW_TAG, PRINTING_TAG_TEXT
+  CREATE_NEW_TAG,
+  PRINTING_TAG_TEXT,
+  APPEND_NEW_TAG
 } from '../constants/taskCreatorActions';
+const tagCreatorInitialState = {
+  createNewTag: false,
+  tagSearch: true,
+  searchFilter: '',
+  newTagColor: 40,
+  newTagText: '',
+  colorPresets: [40]
+};
 const initialState = {
   isOpen: false,
   sendState: NOT_READY,
@@ -27,9 +37,9 @@ const initialState = {
     searchFilter: '',
     newTagColor: 40,
     newTagText: '',
-    colorPresets: [40],
-
+    colorPresets: [40]
   },
+  tags: [],
   id: ''
 };
 const taskCreator = (state = initialState, action) => {
@@ -43,8 +53,14 @@ const taskCreator = (state = initialState, action) => {
     case ADD_TASK_TAG:
       return { ...state, showTagBar: true };
     case UPDATE_STATE:
-      console.log(typeof action.payload);
-      return { ...state, ...action.payload };
+      if (action.locate) {
+        return {
+          ...state,
+          [action.locate]: { ...state[action.locate], ...action.payload }
+        };
+      } else {
+        return { ...state, ...action.payload };
+      }
     case SET_TASK_PRIORITY:
       return { ...state, defaultPriority: action.payload };
     case RESET_TASK_CREATOR:
@@ -60,11 +76,37 @@ const taskCreator = (state = initialState, action) => {
       };
     case PRINTING_TAG_TEXT:
       return {
-        ...state, tagCreator: {
+        ...state,
+        tagCreator: {
           ...state.tagCreator,
           newTagText: action.payload
         }
-      }
+      };
+    case APPEND_NEW_TAG:
+      console.log(
+        state.taskText.substr(
+          0,
+          state.taskText.length - (state.tagCreator.newTagText.length + 2)
+        )
+      );
+      return {
+        ...state,
+        tags: [
+          ...state.tags,
+          {
+            key: action.payload,
+            id: action.payload,
+            text: state.tagCreator.newTagText,
+            color: state.tagCreator.newTagColor
+          }
+        ],
+        taskText: state.taskText.substr(
+          0,
+          state.taskText.length - state.tagCreator.newTagText.length
+        ),
+        tagCreator: tagCreatorInitialState,
+        showTagBar: false
+      };
     default:
       return state;
   }
