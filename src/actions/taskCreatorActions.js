@@ -11,7 +11,8 @@ import {
   PRINTING_TAG_TEXT,
   APPEND_NEW_TAG,
   CLOSE_TAG_BAR,
-  APPEND_EXISTS_TAG
+  APPEND_EXISTS_TAG,
+  DELETE_TAG_FROM_TASK
 } from './../constants/taskCreatorActions';
 import store from '../store';
 export const openTaskCreator = payload => ({
@@ -65,11 +66,14 @@ export const addTagById = (id, source) => ({
       console.log(tag);
       console.log(id, tag.id);
       if (id === tag.id) {
-        tag.selected = true;
         return tag;
       }
     }
   }
+});
+export const deleteTagById = id => ({
+  type: DELETE_TAG_FROM_TASK,
+  id
 });
 //usuall actions
 export const sendTask = task => ({

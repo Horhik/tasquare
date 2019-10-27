@@ -40,6 +40,7 @@
 }
 
 .tag__on-creating {
+  margin: 0 3px;
   border-width: 3px;
   display: inline-block;
   text-align: center;
@@ -55,9 +56,42 @@
   overflow: auto;
 }
 
+.tag__selected {
+
+  &:hover,
+  &:focus {
+    background: hsl(0, 90%, 50%) !important;
+    border-color: hsl(0, 100%, 30%) !important;
+    animation: delete .2s;
+    z-index: 9000;
+    position: relative;
+  }
+}
+
 .tag-bar__list {
   padding: 0;
   list-style: none;
   max-height: 25vh;
   overflow: auto;
+}
+
+@keyframes delete {
+
+  0%,
+  20%,
+  40%,
+  60%,
+  90% {
+    transform: translateX(3px);
+  }
+
+  10%,
+  30%,
+  50%,
+  60%,
+  70%,
+  80%,
+  100% {
+    transform: translateX(-3px);
+  }
 }

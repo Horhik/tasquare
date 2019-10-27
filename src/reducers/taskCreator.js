@@ -12,7 +12,8 @@ import {
   PRINTING_TAG_TEXT,
   APPEND_NEW_TAG,
   CLOSE_TAG_BAR,
-  APPEND_EXISTS_TAG
+  APPEND_EXISTS_TAG,
+  DELETE_TAG_FROM_TASK
 } from '../constants/taskCreatorActions';
 const tagCreatorInitialState = {
   createNewTag: false,
@@ -95,8 +96,7 @@ const taskCreator = (state = initialState, action) => {
             key: action.payload,
             id: action.payload,
             text: '#' + state.tagCreator.newTagText,
-            color: state.tagCreator.newTagColor,
-            selected: false
+            color: state.tagCreator.newTagColor
           },
 
           ...state.tags
@@ -112,6 +112,11 @@ const taskCreator = (state = initialState, action) => {
       return {
         ...state,
         tags: [action.tag(), ...state.tags]
+      };
+    case DELETE_TAG_FROM_TASK:
+      return {
+        ...state,
+        tags: state.tags.filter(tag => tag.id !== action.id)
       };
     case CLOSE_TAG_BAR:
       return {
