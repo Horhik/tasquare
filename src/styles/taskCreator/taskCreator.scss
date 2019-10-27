@@ -1,4 +1,4 @@
-.task-creator{
+.task-creator {
   background: var(--fields-color);
   display: flex;
   justify-content: space-between;
@@ -10,21 +10,26 @@
   position: fixed;
   bottom: 0;
 }
-.task-creator__send{
+
+.task-creator__send {
   background-color: transparent;
   border: 0;
   margin: 0;
   margin-left: -20px;
   padding: 0;
   transition: .5s;
-  &:focus{
+
+  &:focus {
     outline: none;
     transform: scale(0.94);
   }
-  &:active{
+
+  &:active {
     transform: translateX(100px);
   }
 }
+
 @import './heading';
 @import './tagSettings';
 @import './TagSelector';
+@import './current-tags.scss'

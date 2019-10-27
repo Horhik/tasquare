@@ -23,7 +23,6 @@ class taskCreator extends React.Component {
       if (this.props.send === READY) {
         this.props.sendTask(this.props.taskCreator);
         const json = JSON.stringify(this.props.taskCreator);
-        console.log(json);
         fetch('http://127.0.0.1:8081/', {
           method: 'POST',
           headers: {

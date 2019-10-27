@@ -1,18 +1,22 @@
-import React from 'react'
-import {connect} from 'react-redux';
+import React from 'react';
+import { connect } from 'react-redux';
+import Tag from '../Tag';
 
-class TaskTags extends React.Component {
-    render() {
-        return(
-            <ul className={'task-tags'}></ul>
-        )
-    }
-}
-export default connect(state => (
-        {
-            taskCreator: state.taskCreator
-        }
-    ),
-    {
-
-    })(TaskTags )
+const TaskTags = props => {
+  return (
+    <ul className={'task-tags'}>
+      {props.currentTags.map(tag => (
+        <li className={'task-tags__item'} key={tag.id}>
+          <Tag id={tag.id} color={tag.color} text={tag.text}></Tag>
+        </li>
+      ))}
+    </ul>
+  );
+};
+export default connect(
+  state => ({
+    taskCreator: state.taskCreator,
+    currentTags: state.taskCreator.tags
+  }),
+  {}
+)(TaskTags);

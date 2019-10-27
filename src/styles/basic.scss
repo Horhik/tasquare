@@ -1,16 +1,25 @@
-body{
+body {
   font-family: $main-font;
   margin: 0;
   padding: 0;
+  scrollbar-color: var(--main-hsl) hsl(var(--main-color), 100%, 30%);
 }
-#root{
+
+* {
+
+  scrollbar-color: var(--main-hsl) hsl(var(--main-color), 100%, 30%);
+}
+
+#root {
   position: relative;
   overflow: hidden;
 }
-.App{
+
+.App {
   position: relative;
 }
-.h1{
+
+.h1 {
   font-style: normal;
   font-weight: normal;
   font-size: 40px;

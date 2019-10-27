@@ -14,6 +14,7 @@ export const CREATE_NEW_TAG = 'CREATE_NEW_TAG';
 export const PRINTING_TAG_TEXT = 'PRINTING_TAG_TEXT ';
 //append new tag to creation task Field
 export const APPEND_NEW_TAG = 'APPEND_NEW_TAG ';
+export const APPEND_EXISTS_TAG = 'APPEND_EXISTS_TAG';
 // cloase Tag Bar
 export const CLOSE_TAG_BAR = 'CLOSE_TAG_BAR';
 

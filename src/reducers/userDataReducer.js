@@ -13,7 +13,6 @@ const initialState = {
 const userData = (state = initialState, action) => {
   switch (action.type) {
     case SEND_TASK:
-      console.log(action);
       const task = { ...action.task, id: uuid() };
       return {
         ...state,

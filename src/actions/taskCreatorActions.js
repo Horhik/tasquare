@@ -10,8 +10,10 @@ import {
   CREATE_NEW_TAG,
   PRINTING_TAG_TEXT,
   APPEND_NEW_TAG,
-  CLOSE_TAG_BAR
+  CLOSE_TAG_BAR,
+  APPEND_EXISTS_TAG
 } from './../constants/taskCreatorActions';
+import store from '../store';
 export const openTaskCreator = payload => ({
   type: OPEN_TASK_CREATOR,
   payload
@@ -54,6 +56,20 @@ export const appendNewTag = payload => ({
 
 export const closeTagBar = payload => ({
   type: CLOSE_TAG_BAR
+});
+
+export const addTagById = (id, source) => ({
+  type: APPEND_EXISTS_TAG,
+  tag: () => {
+    for (let tag of Object.values(source)) {
+      console.log(tag);
+      console.log(id, tag.id);
+      if (id === tag.id) {
+        tag.selected = true;
+        return tag;
+      }
+    }
+  }
 });
 //usuall actions
 export const sendTask = task => ({

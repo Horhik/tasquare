@@ -11,7 +11,8 @@ import {
   CREATE_NEW_TAG,
   PRINTING_TAG_TEXT,
   APPEND_NEW_TAG,
-  CLOSE_TAG_BAR
+  CLOSE_TAG_BAR,
+  APPEND_EXISTS_TAG
 } from '../constants/taskCreatorActions';
 const tagCreatorInitialState = {
   createNewTag: false,
@@ -68,7 +69,6 @@ const taskCreator = (state = initialState, action) => {
     case RESET_TASK_CREATOR:
       return initialState;
     case CREATE_NEW_TAG:
-      console.log(action.payload);
       return {
         ...state,
         tagCreator: {
@@ -91,13 +91,15 @@ const taskCreator = (state = initialState, action) => {
       return {
         ...state,
         tags: [
-          ...state.tags,
           {
             key: action.payload,
             id: action.payload,
-            text: state.tagCreator.newTagText,
-            color: state.tagCreator.newTagColor
-          }
+            text: '#' + state.tagCreator.newTagText,
+            color: state.tagCreator.newTagColor,
+            selected: false
+          },
+
+          ...state.tags
         ],
         taskText: state.taskText.substr(
           0,
@@ -105,6 +107,11 @@ const taskCreator = (state = initialState, action) => {
         ),
         tagCreator: tagCreatorInitialState,
         showTagBar: false
+      };
+    case APPEND_EXISTS_TAG:
+      return {
+        ...state,
+        tags: [action.tag(), ...state.tags]
       };
     case CLOSE_TAG_BAR:
       return {
