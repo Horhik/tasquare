@@ -1,6 +1,9 @@
 .tag-bar {
   position: absolute;
   display: flex;
+  align-items: center;
+  align-content: center;
+
   background-color: var(--fields-color);
   left: 20%;
   bottom: 140px;
@@ -35,7 +38,8 @@
   margin: 0;
   padding: 0;
 }
-.tag__on-creating{
+
+.tag__on-creating {
   border-width: 3px;
   display: inline-block;
   text-align: center;
@@ -48,5 +52,12 @@
   max-width: 48vw;
   word-wrap: break-word;
   max-height: 50vh;
+  overflow: auto;
+}
+
+.tag-bar__list {
+  padding: 0;
+  list-style: none;
+  max-height: 25vh;
   overflow: auto;
 }

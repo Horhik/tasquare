@@ -45,9 +45,9 @@ class TaskHeading extends React.Component {
     }
     if (this.props.taskCreator.showTagBar && !this.props.creator.createNewTag) {
       const text = this.self.current.value;
-      if (text.length === 0 || text[text.length - 1] !== '#') {
-        this.props.updateState({ taskText: `${text} #` });
-      }
+      // if (text.length === 0 || text[text.length - 1] !== '#') {
+      //   this.self.current.value += ' #';
+      // }
     }
   }
   input(e) {

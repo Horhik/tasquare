@@ -29,10 +29,7 @@ class CreateNewTag extends React.Component {
     this.setState({ tagColor: color });
   }
   createTag() {
-    console.log('lciketd');
     this.props.createNewTag();
-    const text = this.props.taskText;
-    console.log(text);
   }
   render() {
     const creator = this.props.creator;

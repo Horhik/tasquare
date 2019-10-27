@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import { tag } from '../../../svg/navBarIcons';
-import { showHideTaskBar } from '../../../actions/taskCreatorActions'; //showHideTaskBar
+import {
+  showHideTaskBar,
+  updateState
+} from '../../../actions/taskCreatorActions'; //showHideTaskBar
 import { connect } from 'react-redux';
 
 function AddTags(props) {
   const [className, modifyClass] = useState('task-setting ');
   function showHideTaskBar() {
     props.showHideTaskBar(true);
+    props.updateState({ taskText: props.taskText + ' #' });
     modifyClass(className + ' task-setting--selected');
   }
   return (
@@ -18,8 +22,11 @@ function AddTags(props) {
   );
 }
 export default connect(
-  null,
+  state => ({
+    taskText: state.taskCreator.taskText
+  }),
   {
-    showHideTaskBar
+    showHideTaskBar,
+    updateState
   }
 )(AddTags);

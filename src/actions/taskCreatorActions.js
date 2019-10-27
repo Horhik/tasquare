@@ -37,8 +37,9 @@ export const showHideTaskBar = payload => ({
   payload
 });
 
-export const createNewTag = () => ({
-  type: CREATE_NEW_TAG
+export const createNewTag = payload => ({
+  type: CREATE_NEW_TAG,
+  payload
 });
 
 export const printTextToTag = payload => ({

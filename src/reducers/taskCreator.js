@@ -68,13 +68,16 @@ const taskCreator = (state = initialState, action) => {
     case RESET_TASK_CREATOR:
       return initialState;
     case CREATE_NEW_TAG:
+      console.log(action.payload);
       return {
         ...state,
         tagCreator: {
           ...state.tagCreator,
           createNewTag: true,
           tagSearch: false
-        }
+        },
+        //payload as button method. Using button for create tag or keyboard
+        taskText: state.taskText + (action.payload ? ' #' : '')
       };
     case PRINTING_TAG_TEXT:
       return {
