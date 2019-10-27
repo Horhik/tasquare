@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { updateState } from '../actions/taskCreatorActions';
+import { updateState, showHideTaskBar } from '../actions/taskCreatorActions';
 const Tag = props => {
   const showLight = props.color > 170 && props.color < 296;
   useEffect(() => {
@@ -19,14 +19,15 @@ const Tag = props => {
         backgroundColor: `hsl(${props.color}, 100%, 50%)`,
         borderColor: `hsl(${props.color}, 100%, ${showLight ? '70%' : '35%'})`
       }}
-    >{`#${props.creator}`}</mark>
+    >{`#${props.tagText}`}</mark>
   );
 };
 export default connect(
   state => ({
-    creator: state.taskCreator.tagCreator.newTagText
+    tagText: state.taskCreator.tagCreator.newTagText
   }),
   {
-    updateState
+    updateState,
+    showHideTaskBar
   }
 )(Tag);

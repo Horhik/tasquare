@@ -1,26 +1,25 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { tag } from '../../../svg/navBarIcons';
-import {addTag} from "../../../actions/taskCreatorActions";
-import {connect} from 'react-redux';
+import { showHideTaskBar } from '../../../actions/taskCreatorActions'; //showHideTaskBar
+import { connect } from 'react-redux';
 
-function  AddTags (props ) {
-    // let className = 'task-setting ';
-    const [className, modifyClass] = useState('task-setting ')
-    function  addTag(){
-       props.addTag()
-        // className += ' task-setting--selected'
-        modifyClass(className + ' task-setting--selected')
-    }
+function AddTags(props) {
+  const [className, modifyClass] = useState('task-setting ');
+  function showHideTaskBar() {
+    props.showHideTaskBar(true);
+    modifyClass(className + ' task-setting--selected');
+  }
   return (
     <li key={'task-tag'}>
-      <button
-          onClick={addTag}
-          type="button" className={className}>
+      <button onClick={showHideTaskBar} type="button" className={className}>
         {tag}
       </button>
     </li>
   );
-};
-export default connect(null, {
-    addTag
-})(AddTags);
+}
+export default connect(
+  null,
+  {
+    showHideTaskBar
+  }
+)(AddTags);

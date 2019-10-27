@@ -7,10 +7,11 @@ import {
   CHANGE_SEND_STATE,
   RESET_TASK_CREATOR,
   NOT_READY,
-  ADD_TASK_TAG,
+  SHOW_HIDE_TASK_BAR,
   CREATE_NEW_TAG,
   PRINTING_TAG_TEXT,
-  APPEND_NEW_TAG
+  APPEND_NEW_TAG,
+  CLOSE_TAG_BAR
 } from '../constants/taskCreatorActions';
 const tagCreatorInitialState = {
   createNewTag: false,
@@ -40,6 +41,7 @@ const initialState = {
     colorPresets: [40]
   },
   tags: [],
+  userTags: [],
   id: ''
 };
 const taskCreator = (state = initialState, action) => {
@@ -50,8 +52,8 @@ const taskCreator = (state = initialState, action) => {
       return { ...state, focusOnHeading: true };
     case CHANGE_SEND_STATE:
       return { ...state, sendState: action.payload };
-    case ADD_TASK_TAG:
-      return { ...state, showTagBar: true };
+    case SHOW_HIDE_TASK_BAR:
+      return { ...state, showTagBar: action.payload };
     case UPDATE_STATE:
       if (action.locate) {
         return {
@@ -83,12 +85,6 @@ const taskCreator = (state = initialState, action) => {
         }
       };
     case APPEND_NEW_TAG:
-      console.log(
-        state.taskText.substr(
-          0,
-          state.taskText.length - (state.tagCreator.newTagText.length + 2)
-        )
-      );
       return {
         ...state,
         tags: [
@@ -102,10 +98,15 @@ const taskCreator = (state = initialState, action) => {
         ],
         taskText: state.taskText.substr(
           0,
-          state.taskText.length - state.tagCreator.newTagText.length
+          state.taskText.length - (state.tagCreator.newTagText.length + 1)
         ),
         tagCreator: tagCreatorInitialState,
         showTagBar: false
+      };
+    case CLOSE_TAG_BAR:
+      return {
+        ...state,
+        tagCreator: tagCreatorInitialState
       };
     default:
       return state;

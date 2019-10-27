@@ -5,7 +5,7 @@ export const SEND_TASK = 'SEND_TASK';
 export const UPDATE_STATE = 'UPDATE_STATE';
 export const CHANGE_SEND_STATE = 'CHANGE_SEND_STATE';
 export const RESET_TASK_CREATOR = 'RESET_TASK_CREATOR';
-export const ADD_TASK_TAG = 'ADD_TASK_TAG';
+export const SHOW_HIDE_TASK_BAR = 'SHOW_HIDE_TASK_BAR ';
 //searching tag in userData
 export const SEARCH_USER_TAGS = 'SEARCH_USER_TAGS';
 //open creating new tag field
@@ -14,6 +14,8 @@ export const CREATE_NEW_TAG = 'CREATE_NEW_TAG';
 export const PRINTING_TAG_TEXT = 'PRINTING_TAG_TEXT ';
 //append new tag to creation task Field
 export const APPEND_NEW_TAG = 'APPEND_NEW_TAG ';
+// cloase Tag Bar
+export const CLOSE_TAG_BAR = 'CLOSE_TAG_BAR';
 
 export const NOT_READY = 0;
 export const GETTING_READY = 1;
