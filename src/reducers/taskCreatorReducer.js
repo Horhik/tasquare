@@ -1,4 +1,4 @@
-import { priorities as pr } from './../constants/priorities';
+import { priorities as pr } from "./../constants/priorities";
 import {
   FOCUS_ON_HEADING,
   OPEN_TASK_CREATOR,
@@ -14,21 +14,21 @@ import {
   CLOSE_TAG_BAR,
   APPEND_EXISTS_TAG,
   DELETE_TAG_FROM_TASK
-} from '../constants/taskCreatorActions';
+} from "../constants/taskCreatorActions";
 const tagCreatorInitialState = {
   createNewTag: false,
   tagSearch: true,
-  searchFilter: '',
+  searchFilter: "",
   newTagColor: 40,
-  newTagText: '',
+  newTagText: "",
   colorPresets: [40]
 };
 const initialState = {
   isOpen: false,
   sendState: NOT_READY,
-  taskText: '',
+  taskText: "",
   defaultPriority: pr.IU,
-  defaultDate: 'TODAY',
+  defaultDate: "TODAY",
   setReminder: null,
   send: false,
   dateOfCreate: new Date(),
@@ -37,16 +37,16 @@ const initialState = {
   tagCreator: {
     createNewTag: false,
     tagSearch: true,
-    searchFilter: '',
+    searchFilter: "",
     newTagColor: 40,
-    newTagText: '',
+    newTagText: "",
     colorPresets: [40]
   },
   tags: [],
   userTags: [],
-  id: ''
+  id: ""
 };
-const taskCreator = (state = initialState, action) => {
+const taskCreatorReducer = (state = initialState, action) => {
   switch (action.type) {
     case OPEN_TASK_CREATOR:
       return { ...state, isOpen: true };
@@ -78,7 +78,7 @@ const taskCreator = (state = initialState, action) => {
           tagSearch: false
         },
         //payload as button method. Using button for create tag or keyboard
-        taskText: state.taskText + (action.payload ? ' #' : '')
+        taskText: state.taskText + (action.payload ? " #" : "")
       };
     case PRINTING_TAG_TEXT:
       return {
@@ -91,16 +91,7 @@ const taskCreator = (state = initialState, action) => {
     case APPEND_NEW_TAG:
       return {
         ...state,
-        tags: [
-          {
-            key: action.payload,
-            id: action.payload,
-            text: '#' + state.tagCreator.newTagText,
-            color: state.tagCreator.newTagColor
-          },
-
-          ...state.tags
-        ],
+        tags: [action.payload.id, ...state.tags],
         taskText: state.taskText.substr(
           0,
           state.taskText.length - (state.tagCreator.newTagText.length + 1)
@@ -127,4 +118,4 @@ const taskCreator = (state = initialState, action) => {
       return state;
   }
 };
-export default taskCreator;
+export default taskCreatorReducer;

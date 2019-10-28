@@ -4,18 +4,15 @@
     <list default="true" id="8420f9f3-59bc-445a-b3a7-5ff5ae286fb4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/taskCreatorActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/taskCreatorActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tag.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tag.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/priority.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/priority.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/AddTags.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/AddTags.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/CreateNewTag.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/CreateNewTag.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/TagBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/TagBar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/taskCreator/taskCreator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/taskCreator.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/taskHeading.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/taskHeading.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/taskCreatorActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/taskCreatorActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/taskCreator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/taskCreator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/taskTags.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/taskTags.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/rootReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/taskCreator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/taskCreatorReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/userDataReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/userDataReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/taskCreator/TagSelector.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/taskCreator/TagSelector.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/taskCreator/color-library.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/taskCreator/color-library.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/taskCreator/current-tags.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/taskCreator/current-tags.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +53,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.localhost:3000">
+    <configuration default="true" type="JavascriptDebugType" uri="http://localhost:3001" useFirstLineBreakpoints="true">
+      <method v="2">
+        <option name="LaunchBrowser.Before.Run" url="localhost:3001" />
+      </method>
+    </configuration>
+    <configuration name="localhost:3000" type="JavascriptDebugType" uri="http://localhost:3000" useFirstLineBreakpoints="true">
+      <method v="2">
+        <option name="LaunchBrowser.Before.Run" url="localhost:3001" />
+      </method>
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -68,6 +75,10 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.localhost:3000" />
+      <item itemvalue="npm.start" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
@@ -101,6 +112,8 @@
       <workItem from="1571977001664" duration="72000" />
       <workItem from="1571977289415" duration="2525000" />
       <workItem from="1571979951912" duration="1598000" />
+      <workItem from="1572194935885" duration="146000" />
+      <workItem from="1572198565138" duration="909000" />
     </task>
     <servers />
   </component>
@@ -119,5 +132,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Tag.jsx</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

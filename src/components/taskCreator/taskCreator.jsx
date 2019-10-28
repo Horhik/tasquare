@@ -37,7 +37,12 @@ class taskCreator extends React.Component {
   submit(e) {
     e.preventDefault();
     if (this.props.taskCreator.showTagBar) {
-      this.props.appendNewTag(`#tag:$${uuid('v4')}`);
+      const tc = this.props.taskCreator
+      this.props.appendNewTag({
+        id:`#tag:$${uuid('v4')}`,
+        text: tc.tagCreator.newTagText,
+        color: tc.tagCreator.newTagColor
+      });
     } else {
       this.sendTask(GETTING_READY);
     }
