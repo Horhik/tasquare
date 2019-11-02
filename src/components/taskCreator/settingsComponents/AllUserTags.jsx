@@ -1,24 +1,25 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Tag from '../../Tag';
+import UserTag from "./UserTag";
 
 class AllUserTags extends React.Component {
   render() {
     const tags = this.props.userTags;
-    const filtered = tags.filter(
-      tag => tag.text.includes(this.props.creator.newTagText) //&& !tag.selected
-    );
+    // const filtered = tags.filter(
+    //   tag => tag.text.includes(this.props.creator.newTagText) //&& !tag.selected
+    // );
     return (
       <div className="tag-bar--inner tag-bar__user-tags">
-        {filtered.length !== 0 ? (
+        {tags.length !== 0 ? (
           <ul className="tag-bar__list">
-            {filtered.map(tag => (
+            {tags.map(tag => (
               <li key={tag.id} className={'tag-bar__li'}>
-                <Tag
+                <UserTag
                   id={tag.id}
                   color={tag.color}
                   text={tag.text}
-                  status={'searched'}
+                isSelected={this.props.taskCreator.tags.includes(tag.id)}
                 />
               </li>
             ))}
@@ -32,5 +33,6 @@ class AllUserTags extends React.Component {
 }
 export default connect(state => ({
   userTags: state.userData.tags,
-  creator: state.taskCreator.tagCreator
+  creator: state.taskCreator.tagCreator,
+  taskCreator: state.taskCreator
 }))(AllUserTags);

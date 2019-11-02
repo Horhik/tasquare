@@ -59,17 +59,9 @@ export const closeTagBar = payload => ({
   type: CLOSE_TAG_BAR
 });
 
-export const addTagById = (id, source) => ({
+export const addTagById = id => ({
   type: APPEND_EXISTS_TAG,
-  tag: () => {
-    for (let tag of Object.values(source)) {
-      console.log(tag);
-      console.log(id, tag.id);
-      if (id === tag.id) {
-        return tag;
-      }
-    }
-  }
+  id
 });
 export const deleteTagById = id => ({
   type: DELETE_TAG_FROM_TASK,

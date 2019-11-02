@@ -102,12 +102,12 @@ const taskCreatorReducer = (state = initialState, action) => {
     case APPEND_EXISTS_TAG:
       return {
         ...state,
-        tags: [action.tag(), ...state.tags]
+        tags: [action.id, ...state.tags]
       };
     case DELETE_TAG_FROM_TASK:
       return {
         ...state,
-        tags: state.tags.filter(tag => tag.id !== action.id)
+        tags: state.tags.filter(tag => tag !== action.id)
       };
     case CLOSE_TAG_BAR:
       return {

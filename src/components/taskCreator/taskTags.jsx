@@ -1,6 +1,7 @@
 import React ,{useEffect, useState}from 'react';
 import { connect } from 'react-redux';
 import Tag from '../Tag';
+import UserTag from "./settingsComponents/UserTag";
 
 const TaskTags = props => {
     const [tags, getTagFromId] = useState([])
@@ -18,7 +19,7 @@ return (
     <ul className={'task-tags'}>
       {tags.map(tag => (
         <li className={'task-tags__item'} key={tag.id}>
-          <Tag id={tag.id} color={tag.color} text={tag.text}/>
+          <UserTag id={tag.id} color={tag.color} text={tag.text} onList={true}/>
         </li>
       ))}
     </ul>

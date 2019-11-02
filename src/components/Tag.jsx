@@ -15,18 +15,10 @@ const Tag = props => {
       {
         newTagColor: props.color
       },
-      'tagCreator'
+      'tagCreator' //it's UPDATE_StATE locate arg
     );
   });
-  const addToTask = () => {
-    controlSelect(!selected);
-    // console.log(store.getState().userData.tags);
-    if (!selected) {
-      props.addTagById(props.id, store.getState().userData.tags);
-    } else {
-      props.deleteTagById(props.id);
-    }
-  };
+
   const tagStyle = selected
     ? {
         color: `hsl(${props.color}, 90%, 70%)`,
@@ -40,14 +32,13 @@ const Tag = props => {
       };
   return (
     <mark
-      onClick={props.status === 'searched' ? addToTask : null}
-      className={`tag tag__on-creating ${selected ? 'tag__selected' : ''}`}
+      className={`tag tag__on-creating `}
       style={{
-        cursor: props.status === 'searched' ? 'pointer' : 'default',
+        cursor:  'default',
         ...tagStyle
       }}
     >
-      {props.id ? props.text : `#${props.tagText}`}
+      { `#${props.tagText}`}
     </mark>
   );
 };
