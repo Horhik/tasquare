@@ -1,0 +1,10 @@
+.date-picker{
+    &--outer{
+        visibility: hidden;
+        margin: -1;
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        clip: rect(0 0 0 0 );
+    }
+}

@@ -1,0 +1,12 @@
+.task__tags{
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+.task__tag{
+  white-space: nowrap;
+  width: auto;
+  & mark {
+    max-width: none;
+  }
+}

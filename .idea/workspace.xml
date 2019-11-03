@@ -2,18 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8420f9f3-59bc-445a-b3a7-5ff5ae286fb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/UserTag.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/localhost_3000.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/taskCreator/.taskCreator.jsx.swp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/taskCreatorActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/taskCreatorActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tag.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tag.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/AddTags.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/AddTags.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/AllUserTags.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/AllUserTags.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/taskTags.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/taskTags.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/task/task.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/task/task.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/task/taskList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/task/taskList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/SetDate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/SetDate.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/taskCreator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/taskCreator.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/taskCreatorReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/taskCreatorReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/task/heading.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/task/heading.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/task/tags.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/task/tags.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/task/task.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/task/task.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/taskCreator/taskCreator.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/taskCreator/taskCreator.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +34,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
@@ -62,17 +65,7 @@
     </option>
   </component>
   <component name="RunManager" selected="JavaScript Debug.localhost:3000">
-    <configuration name=" JavaScript" type="JavascriptDebugType" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="localhost:3000" useFirstLineBreakpoints="true">
-      <method v="2">
-        <option name="LaunchBrowser.Before.Run" browser="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="localhost:3000" withDebugger="true" />
-      </method>
-    </configuration>
     <configuration type="JavascriptDebugType" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:3000" useFirstLineBreakpoints="true">
-      <method v="2">
-        <option name="LaunchBrowser.Before.Run" browser="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="localhost:3000" withDebugger="true" />
-      </method>
-    </configuration>
-    <configuration name="Debug Firefox" type="JavascriptDebugType" uri="http://localhost:3000" useFirstLineBreakpoints="true">
       <method v="2">
         <option name="LaunchBrowser.Before.Run" browser="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="localhost:3000" withDebugger="true" />
       </method>
@@ -82,12 +75,10 @@
         <option name="LaunchBrowser.Before.Run" browser="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="localhost:3000" withDebugger="true" />
       </method>
     </configuration>
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/tasquare/public/index.html" useFirstLineBreakpoints="true" useBuiltInWebServerPort="true">
-      <method v="2">
-        <option name="LaunchBrowser.Before.Run" browser="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="localhost:3000" withDebugger="true" />
-      </method>
+    <configuration name="localhost:3000 JavaScript" type="JavascriptDebugType" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="localhost:3000">
+      <method v="2" />
     </configuration>
-    <configuration name="localhost:3000" type="JavascriptDebugType" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:3000">
+    <configuration name="localhost:3000" type="JavascriptDebugType" editBeforeRun="true" nameIsGenerated="true" uri="http://localhost:3000">
       <method v="2">
         <option name="LaunchBrowser.Before.Run" browser="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="localhost:3000" withDebugger="true" />
       </method>
@@ -105,17 +96,9 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.localhost:3000" />
-      <item itemvalue="JavaScript Debug.Debug Firefox" />
-      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="JavaScript Debug.localhost:3000 JavaScript" />
       <item itemvalue="npm.start" />
-      <item itemvalue="JavaScript Debug." />
-      <item itemvalue="JavaScript Debug. JavaScript" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JavaScript Debug.index.html" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -150,7 +133,9 @@
       <workItem from="1572631168089" duration="648000" />
       <workItem from="1572631946883" duration="147000" />
       <workItem from="1572632115022" duration="373000" />
-      <workItem from="1572634096984" duration="14340000" />
+      <workItem from="1572634096984" duration="18965000" />
+      <workItem from="1572707659455" duration="8210000" />
+      <workItem from="1572748108555" duration="641000" />
     </task>
     <servers />
   </component>

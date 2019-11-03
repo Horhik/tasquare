@@ -55,6 +55,16 @@ const taskCreatorReducer = (state = initialState, action) => {
     case CHANGE_SEND_STATE:
       return { ...state, sendState: action.payload };
     case SHOW_HIDE_TASK_BAR:
+      if (!action.payload) {
+        return {
+          ...state,
+          showTagBar: action.payload,
+          taskText: state.taskText.substr(
+            0,
+            state.taskText.length - (state.tagCreator.newTagText.length + 1)
+          )
+        };
+      }
       return { ...state, showTagBar: action.payload };
     case UPDATE_STATE:
       if (action.locate) {

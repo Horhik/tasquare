@@ -10,7 +10,8 @@ import {
   sendState,
   sendTask,
   resetCreator,
-  appendNewTag
+  appendNewTag,
+    showHideTaskBar
 } from './../../actions/taskCreatorActions';
 import { GETTING_READY, READY } from '../../constants/taskCreatorActions';
 import TagBar from './settingsComponents/TagBar';
@@ -38,11 +39,31 @@ class taskCreator extends React.Component {
     e.preventDefault();
     if (this.props.taskCreator.showTagBar) {
       const tc = this.props.taskCreator
+      const text = tc.tagCreator.newTagText;
+      const alreadyHasSameTag = () => {
+        for(let tag of this.props.userTags){
+          if (tag.text === text){
+              return true
+          }
+          return false
+        }
+      }
+      const hasTag = alreadyHasSameTag();
+      if(text === ''){
+       this.props.showHideTaskBar(false)
+      }
+      else if(  text === ' ' || text === " #"|| text === "#" || hasTag  ){
+        alert("something wrong with you tag")
+          //TODO show warning "tag is already Exists"
+      }
+      else{
+
       this.props.appendNewTag({
         id:`#tag:$${uuid('v4')}`,
         text: tc.tagCreator.newTagText,
         color: tc.tagCreator.newTagColor
       });
+      }
     } else {
       this.sendTask(GETTING_READY);
     }
@@ -74,13 +95,15 @@ export default connect(
   state => ({
     taskCreator: state.taskCreator,
     send: state.taskCreator.sendState,
-    creator: state.taskCreator.tagCreator
+    creator: state.taskCreator.tagCreator,
+    userTags: state.userData.tags
   }),
   {
     focusOnHeading,
     sendState,
     sendTask,
     resetCreator,
-    appendNewTag
+    appendNewTag,
+    showHideTaskBar
   }
 )(taskCreator);

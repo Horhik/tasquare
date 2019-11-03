@@ -8,7 +8,7 @@ class TaskList extends React.Component{
         return (
             <ul className={'task--wrapper'}>
                 {filteredTasks.map(task => <li key={task.id}>
-                    <Task text={task.taskText}/>
+                    <Task text={task.taskText} tags={task.tags} id={task.id}/>
                 </li> )}
             </ul>
         );
