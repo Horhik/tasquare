@@ -40,6 +40,7 @@ class taskCreator extends React.Component {
     if (this.props.taskCreator.showTagBar) {
       const tc = this.props.taskCreator
       const text = tc.tagCreator.newTagText;
+      const taskText = tc.taskText;
       const alreadyHasSameTag = () => {
         for(let tag of this.props.userTags){
           if (tag.text === text){

@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8420f9f3-59bc-445a-b3a7-5ff5ae286fb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/localhost_3000.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/taskCreator/.taskCreator.jsx.swp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/localhost_3000.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/CHROME.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/task/task.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/task/task.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/task/taskList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/task/taskList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/SetDate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/SetDate.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/taskCreator/taskCreator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/taskCreator.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/taskCreatorReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/taskCreatorReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/task/heading.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/task/heading.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/task/tags.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/task/tags.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/task/task.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/task/task.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/taskCreator/taskCreator.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/taskCreator/taskCreator.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/navBar/addTaskBtn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/navBar/addTaskBtn.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.localhost:3000">
+  <component name="RunManager" selected="JavaScript Debug.CHROME">
     <configuration type="JavascriptDebugType" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:3000" useFirstLineBreakpoints="true">
       <method v="2">
         <option name="LaunchBrowser.Before.Run" browser="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="localhost:3000" withDebugger="true" />
@@ -96,6 +87,7 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.localhost:3000" />
+      <item itemvalue="JavaScript Debug.CHROME" />
       <item itemvalue="JavaScript Debug.localhost:3000 JavaScript" />
       <item itemvalue="npm.start" />
     </list>
@@ -136,6 +128,8 @@
       <workItem from="1572634096984" duration="18965000" />
       <workItem from="1572707659455" duration="8210000" />
       <workItem from="1572748108555" duration="641000" />
+      <workItem from="1572792403213" duration="1450000" />
+      <workItem from="1573320706804" duration="6145000" />
     </task>
     <servers />
   </component>

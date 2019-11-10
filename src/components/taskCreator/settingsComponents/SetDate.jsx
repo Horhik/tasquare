@@ -5,8 +5,8 @@ const SetDate = (props) =>{
     const [showCalendar, setCalendar] = useState(false)
     const datePicker = useRef(null)
     const showHideCalendar = () => {
-        setCalendar(!showCalendar)
-        datePicker.current.click()
+        setCalendar(!showCalendar);
+        datePicker.current.click();
     }
     return(
         <li key={'task-calendar'}>
