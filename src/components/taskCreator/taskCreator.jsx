@@ -38,17 +38,14 @@ class taskCreator extends React.Component {
   submit(e) {
     e.preventDefault();
     if (this.props.taskCreator.showTagBar) {
-      const tc = this.props.taskCreator
+      const tc = this.props.taskCreator;
       const text = tc.tagCreator.newTagText;
-      const taskText = tc.taskText;
       const alreadyHasSameTag = () => {
         for(let tag of this.props.userTags){
-          if (tag.text === text){
-              return true
-          }
-          return false
+          return tag.text === text;
+
         }
-      }
+      };
       const hasTag = alreadyHasSameTag();
       if(text === ''){
        this.props.showHideTaskBar(false)
@@ -61,7 +58,7 @@ class taskCreator extends React.Component {
 
       this.props.appendNewTag({
         id:`#tag:$${uuid('v4')}`,
-        text: tc.tagCreator.newTagText,
+        text: `#${tc.tagCreator.newTagText}`,
         color: tc.tagCreator.newTagColor
       });
       }

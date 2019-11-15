@@ -1,26 +1,29 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, { useRef} from 'react'
+import {connect} from 'react-redux'
 import {calendar} from "../../../svg/navBarIcons";
 
+import {updateState} from "../../../actions/taskCreatorActions";
+
 const SetDate = (props) =>{
-    const [showCalendar, setCalendar] = useState(false)
-    const datePicker = useRef(null)
-    const showHideCalendar = () => {
-        setCalendar(!showCalendar);
-        datePicker.current.click();
-    }
+    const datePicker = useRef({});
     return(
         <li key={'task-calendar'}>
-            <input  
+            <input
+                onChange={props.updateState({
+                    defaultDate: datePicker.current.value
+                })}
             ref={datePicker}
             className={"date-picker--outer"}
             type="date" name="date of reminder" id="task-date"/>
-            <button 
-            onClick={showHideCalendar}
-            type={"button"}
+            <label
+                for={"task-date"}
             className="task-setting">
                 {calendar}
-            </button>
+            </label>
         </li>
     )
 };
-export default SetDate
+export default connect(null,
+    {
+        updateState
+    })(SetDate)

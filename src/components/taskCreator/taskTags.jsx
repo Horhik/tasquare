@@ -1,20 +1,20 @@
 import React ,{useEffect, useState}from 'react';
 import { connect } from 'react-redux';
-import Tag from '../Tag';
 import UserTag from "./settingsComponents/UserTag";
 
 const TaskTags = props => {
-    const [tags, getTagFromId] = useState([])
+    const [tags, getTagFromId] = useState([]);
     useEffect(() => {
+        // eslint-disable-next-line array-callback-return
         const getObj = props.currentTags.map(id => {
             for(let tag of Object.values(props.userTags)){
                 if(tag.id ===id){
                     return tag
                 }
             }
-        })
+        });
         getTagFromId(getObj)
-    }, [props.currentTags])
+    }, [props.currentTags]);
 return (
     <ul className={'task-tags'}>
       {tags.map(tag => (

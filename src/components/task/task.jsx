@@ -4,11 +4,12 @@ import completeButton from '../../svg/completeButton';
 import UserTag from "../taskCreator/settingsComponents/UserTag";
 class Task extends React.Component {
   render() {
-      console.log(this)
-      console.log(this.props)
-      const tags  = this.props.tags.map(id => {
-          for(let tag of this.props.userTags){
-              console.log(tag)
+      console.log(this);
+      console.log(this.props);
+      let tags;
+      // eslint-disable-next-line array-callback-return
+      tags = this.props.tags.map(id => {
+          for (let tag of this.props.userTags) {
               if (tag.id === id) {
                   return (
                       <li className={'task__tag'} key={tag.id}>
@@ -17,7 +18,7 @@ class Task extends React.Component {
                   )
               }
           }
-      })
+      });
       console.log(tags)
       return (
           <div className={'task'}>

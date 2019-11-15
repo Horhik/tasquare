@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8420f9f3-59bc-445a-b3a7-5ff5ae286fb4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/localhost_3000.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/CHROME.xml" afterDir="false" />
+    <list default="true" id="8420f9f3-59bc-445a-b3a7-5ff5ae286fb4" name="Default Changelist" comment="add date and time picker&#10;*fix tag selector style bug&#10;*add sending date and time info to tag">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/task/task.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/task/task.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/AddTags.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/AddTags.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/AllUserTags.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/AllUserTags.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/SetDate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/SetDate.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/SetReminder.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/SetReminder.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/taskCreator/taskCreator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/taskCreator.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/navBar/addTaskBtn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/navBar/addTaskBtn.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/taskTags.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/taskTags.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +44,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -130,6 +133,7 @@
       <workItem from="1572748108555" duration="641000" />
       <workItem from="1572792403213" duration="1450000" />
       <workItem from="1573320706804" duration="6145000" />
+      <workItem from="1573848224718" duration="4931000" />
     </task>
     <servers />
   </component>
@@ -148,6 +152,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add date and time picker&#10;*fix tag selector style bug&#10;*add sending date and time info to tag" />
+    <option name="LAST_COMMIT_MESSAGE" value="add date and time picker&#10;*fix tag selector style bug&#10;*add sending date and time info to tag" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tasquare$localhost_3000.dat" NAME="localhost:3000 Coverage Results" MODIFIED="1572629643044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

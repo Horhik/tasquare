@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Tag from '../../Tag';
 import UserTag from "./UserTag";
 
 class AllUserTags extends React.Component {
