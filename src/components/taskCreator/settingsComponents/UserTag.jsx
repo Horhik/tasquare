@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import {connect} from 'react-redux'
 import store from "../../../store";
 import {addTagById, deleteTagById} from "../../../actions/taskCreatorActions";
@@ -18,9 +18,6 @@ const UserTag = props => {
           borderColor: `hsl(${props.color}, 100%, ${showLight ? '70%' : '35%'})`
        };
 
-    // useEffect(() => {
-    //     controlSelect(props.isSelected)
-    // })
     const addToTask = () => {
         controlSelect(!selected);
         if (!selected) {
@@ -43,6 +40,7 @@ const UserTag = props => {
    )
 };
 //TODO create DnD function of deleting tags from userTags and currentTask
+//TODO create search function then user click on tag in made up tusk
 export default connect(state => ({
 
 }), {

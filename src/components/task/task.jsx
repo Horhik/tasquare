@@ -2,10 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 import completeButton from '../../svg/completeButton';
 import UserTag from "../taskCreator/settingsComponents/UserTag";
+import {completeTask} from "../../actions/userActions";
+
 class Task extends React.Component {
   render() {
-      console.log(this);
-      console.log(this.props);
       let tags;
       // eslint-disable-next-line array-callback-return
       tags = this.props.tags.map(id => {
@@ -19,7 +19,6 @@ class Task extends React.Component {
               }
           }
       });
-      console.log(tags)
       return (
           <div className={'task'}>
         <div className="task--inner"><span>
@@ -31,11 +30,19 @@ class Task extends React.Component {
             </ul>
 
         </div>
-        <button className="task__complete">{completeButton}</button>
+        <button
+            onClick={() => {setTimeout(() => {
+            this.props.completeTask({id: this.props.id})
+            }, 500)}}
+            //TODO add transition effect
+            className="task__complete"
+        >{completeButton}</button>
       </div>
     );
   }
 }
 export default connect(state => ({
     userTags: state.userData.tags
-}))(Task);
+}), {
+    completeTask
+})(Task);

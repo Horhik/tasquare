@@ -2,6 +2,8 @@
   list-style: none;
   display: flex;
   padding: 0;
+  overflow: auto;
+  width: 100%;
 }
 .task__tag{
   white-space: nowrap;

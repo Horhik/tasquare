@@ -47,23 +47,29 @@ class taskCreator extends React.Component {
         }
       };
       const hasTag = alreadyHasSameTag();
-      if(text === ''){
-       this.props.showHideTaskBar(false)
-      }
-      else if(  text === ' ' || text === " #"|| text === "#" || hasTag  ){
+      if(  text === ' ' || text === " #"|| text === "#" || hasTag  ){
         alert("something wrong with you tag")
           //TODO show warning "tag is already Exists"
+        console.log(text);
       }
       else{
 
-      this.props.appendNewTag({
+        console.log(text);
+        this.props.appendNewTag({
         id:`#tag:$${uuid('v4')}`,
         text: `#${tc.tagCreator.newTagText}`,
         color: tc.tagCreator.newTagColor
       });
       }
     } else {
-      this.sendTask(GETTING_READY);
+      let text = this.props.taskCreator.taskText;
+      text = text.match(/\S/g);
+      if(text ===  null || !text.length){
+        this.props.showHideTaskBar(false);
+          alert("task is empty")
+      }else{
+        this.sendTask(GETTING_READY);
+      }
     }
   }
   render() {

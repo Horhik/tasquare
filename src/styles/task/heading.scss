@@ -4,9 +4,9 @@
   font-size: 20px;
   width: 100vw;
   overflow: auto;
-  diplay: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
   align-content: space-between;
+  display: flex;
+  align-items: baseline;
 }

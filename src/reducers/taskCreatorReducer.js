@@ -34,6 +34,7 @@ const initialState = {
   dateOfCreate: new Date(),
   showTagBar: false,
   focusOnHeading: false,
+  complete: false,
   tagCreator: {
     createNewTag: false,
     tagSearch: true,

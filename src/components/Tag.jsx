@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import store from '../store';
 import { connect } from 'react-redux';
 import {
   updateState,
@@ -8,7 +7,7 @@ import {
   deleteTagById
 } from '../actions/taskCreatorActions';
 const Tag = props => {
-  const [selected, controlSelect] = useState(false);
+  const [selected] = useState(false);
   const showLight = props.color > 170 && props.color < 296;
   useEffect(() => {
     props.updateState(

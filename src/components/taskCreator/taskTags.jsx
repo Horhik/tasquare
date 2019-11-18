@@ -14,7 +14,7 @@ const TaskTags = props => {
             }
         });
         getTagFromId(getObj)
-    }, [props.currentTags]);
+    }, [props.currentTags, props.userTags]);
 return (
     <ul className={'task-tags'}>
       {tags.map(tag => (

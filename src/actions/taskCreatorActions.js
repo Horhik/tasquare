@@ -14,7 +14,6 @@ import {
   APPEND_EXISTS_TAG,
   DELETE_TAG_FROM_TASK
 } from "./../constants/taskCreatorActions";
-import store from "../store";
 export const openTaskCreator = payload => ({
   type: OPEN_TASK_CREATOR,
   payload
