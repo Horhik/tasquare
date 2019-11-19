@@ -1,6 +1,14 @@
 import { APPEND_NEW_TAG, SEND_TASK } from "../constants/taskCreatorActions";
 import { priorities } from "../constants/priorities";
-import {CHANGE_SHOW_PRIORITY_FILTER, COMPLETE_TASK} from "../constants/taskListConstants";
+import {
+  CHANGE_SHOW_PRIORITY_FILTER,
+  COMPLETE_TASK,
+  START_TIMER,
+  SWITCH_TAB
+} from "../constants/taskListConstants";
+import { TASKS, TIMER } from "../constants/tabConstants";
+import { startTimer } from "../actions/userActions";
+import { PLAY_STOP_TIMER } from "../constants/timerActions";
 const { IU } = priorities;
 const uuid = require("uuid/v4");
 const initialState = {
@@ -8,7 +16,15 @@ const initialState = {
   tasks: [],
   completedTasks: [],
   reminders: [],
-  currentTaskFilter: IU
+  currentTaskFilter: IU,
+  currentTab: TIMER, //TASKS,
+  playStopTimer: false,
+  startTimer: new Date(),
+  endTimer: new Date(),
+  timerDuration: {
+    minutes: 5,
+    seconds: 44
+  }
 };
 
 const userData = (state = initialState, action) => {
@@ -29,19 +45,38 @@ const userData = (state = initialState, action) => {
     case COMPLETE_TASK:
       let completed = [];
       const tasks = state.tasks.filter(task => {
-          completed.push(task)
-          return task.id !== action.payload.id
-      } )
-        setTimeout(() => {}, 500)
-        return {
-          ...state,
-            tasks: tasks,
-          completedTasks: [...state.completedTasks, completed]
-
-        }
+        completed.push(task);
+        return task.id !== action.payload.id;
+      });
+      setTimeout(() => {}, 500);
+      return {
+        ...state,
+        tasks: tasks,
+        completedTasks: [...state.completedTasks, completed]
+      };
+    case SWITCH_TAB:
+      return { ...state, currentTab: action.tab };
+    case START_TIMER:
+      alert(state.playStopTimer);
+      const startTime = Date.parse(new Date());
+      const endTime = new Date(
+        state.startTimer +
+          state.timerDuration.minutes * 60 * 1000 +
+          state.timerDuration.seconds * 1000
+      );
+      return {
+        ...state,
+        startTimer: startTime,
+        endTimer: endTime,
+        playStopTimer: !state.playStopTimer
+      };
+    case PLAY_STOP_TIMER:
+      if (state.playStopTimer) {
+        return { ...state, playStopTimer: !state.playStopTimer };
+      }
+      return { ...state, playStopTimer: !state.playStopTimer };
     default:
       return state;
-
   }
 };
 export default userData;
