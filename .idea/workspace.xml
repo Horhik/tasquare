@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8420f9f3-59bc-445a-b3a7-5ff5ae286fb4" name="Default Changelist" comment="add date and time picker&#10;*fix tag selector style bug&#10;*add sending date and time info to tag">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -135,6 +134,9 @@
       <workItem from="1573320706804" duration="6145000" />
       <workItem from="1573848224718" duration="4931000" />
       <workItem from="1574060740402" duration="3095000" />
+      <workItem from="1574197644032" duration="121000" />
+      <workItem from="1574198531569" duration="1749000" />
+      <workItem from="1574243877138" duration="408000" />
     </task>
     <servers />
   </component>
