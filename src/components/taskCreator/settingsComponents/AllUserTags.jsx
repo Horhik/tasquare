@@ -1,5 +1,5 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React from "react";
+import { connect } from "react-redux";
 import UserTag from "./UserTag";
 
 class AllUserTags extends React.Component {
@@ -13,18 +13,18 @@ class AllUserTags extends React.Component {
         {tags.length !== 0 ? (
           <ul className="tag-bar__list">
             {tags.map(tag => (
-              <li key={tag.id} className={'tag-bar__li'}>
+              <li key={tag.id} className={"tag-bar__li"}>
                 <UserTag
                   id={tag.id}
                   color={tag.color}
                   text={tag.text}
-                isSelected={this.props.taskCreator.tags.includes(tag.id)}
+                  isSelected={this.props.taskCreator.tags.includes(tag.id)}
                 />
               </li>
             ))}
           </ul>
         ) : (
-          <span className={'tag-bar__text'}>no tags</span>
+          <span className={"tag-bar__text"}>no tags</span>
         )}
       </div>
     );

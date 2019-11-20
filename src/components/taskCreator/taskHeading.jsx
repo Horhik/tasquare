@@ -1,6 +1,6 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import store from '../../store';
+import React from "react";
+import { connect } from "react-redux";
+import store from "../../store";
 import {
   sendState,
   updateState,
@@ -8,8 +8,8 @@ import {
   showHideTaskBar,
   printTextToTag,
   closeTagBar
-} from '../../actions/taskCreatorActions';
-import { GETTING_READY, READY } from '../../constants/taskCreatorActions';
+} from "../../actions/taskCreatorActions";
+import { GETTING_READY, READY } from "../../constants/taskCreatorActions";
 
 class TaskHeading extends React.Component {
   constructor(props) {
@@ -17,8 +17,8 @@ class TaskHeading extends React.Component {
     this.self = React.createRef();
     this.input = this.input.bind(this);
     this.state = {
-      headingText: '',
-      tagText: ''
+      headingText: "",
+      tagText: ""
     };
   }
   focusing() {
@@ -28,7 +28,7 @@ class TaskHeading extends React.Component {
     if (this.props.taskCreator.isOpen) {
       this.focusing();
       this.setState({
-        headingText: ''
+        headingText: ""
       });
     }
   }
@@ -48,14 +48,14 @@ class TaskHeading extends React.Component {
     this.props.updateState({ taskText: e.target.value });
     const input = e.target;
     if (
-      input.value[input.value.length - 1] === '#' &&
-      input.value[input.value.length - 2] === ' '
+      input.value[input.value.length - 1] === "#" &&
+      input.value[input.value.length - 2] === " "
     ) {
       this.props.showHideTaskBar(true);
     }
     if (this.props.taskCreator.showTagBar) {
       const textExists = / #/i.test(input.value);
-      const hashArray = input.value.split(' #');
+      const hashArray = input.value.split(" #");
       const text = hashArray[hashArray.length - 1];
       if (!textExists) {
         this.props.showHideTaskBar(false);
@@ -69,11 +69,11 @@ class TaskHeading extends React.Component {
     return (
       <input
         ref={this.self}
-        placeholder={'Task'}
+        placeholder={"Task"}
         type="text"
         value={this.props.taskCreator.taskText}
         onChange={e => this.input(e)}
-        className={'task-creator__heading'}
+        className={"task-creator__heading"}
       />
     );
   }

@@ -1,0 +1,14 @@
+.timer {
+  &--inner {
+    display: flex;
+    margin-top: 20vh;
+    justify-content: center;
+  }
+  &__time {
+    position: absolute;
+    margin: 0 auto;
+    font-size: 20vw;
+    top: calc(50% - 15vw);
+    max-font-size: 300px;
+  }
+}
