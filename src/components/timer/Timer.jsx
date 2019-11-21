@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import Konva from "konva";
-import { Stage, Arc, Layer, Text, Circle } from "react-konva";
+import { Stage, Arc, Layer } from "react-konva";
 
 const Timer = props => {
   const [progress, timeFlow] = useState(360);
@@ -12,8 +12,20 @@ const Timer = props => {
   const size = maxSize - 24;
   const [time, updateTime] = useState({
     minutes: 25,
-    seconds: 0
+    seconds: 0,
+    duration:  props.duration.minutes * 60 + props.duration.seconds,
   });
+  useEffect(() => {
+    if(props.timerActive){
+      setInterval(() => {
+        updateTime({
+          minutes: Math.floor(time.duration/60),
+          seconds: time.duration%60,
+          duration: time.duration--,
+        })
+      }, 1000)
+    }
+  }, [!props.timerActive])
   // setInterval(() => {
   //   updateTime({
   //     minutes: minutes,
@@ -36,7 +48,7 @@ const Timer = props => {
         </Layer>
       </Stage>
       <span className="timer__time">
-        {!props.timerActive
+        {props.timerActive
           ? `${
               time.minutes.toString().length === 1
                 ? `0${time.minutes}`

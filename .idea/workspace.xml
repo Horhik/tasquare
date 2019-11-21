@@ -2,32 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8420f9f3-59bc-445a-b3a7-5ff5ae286fb4" name="Default Changelist" comment="add date and time picker&#10;*fix tag selector style bug&#10;*add sending date and time info to tag">
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/userActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/userActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/date.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/date.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/priority.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/priority.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navBar/navBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navBar/navBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navBar/pomodoro.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navBar/pomodoro.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/task/task.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/task/task.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/task/taskList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/task/taskList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/AddTags.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/AddTags.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/AllUserTags.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/AllUserTags.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/TagBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/TagBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/UserTag.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/settingsComponents/UserTag.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/taskCreator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/taskCreator.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/taskHeading.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/taskHeading.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/taskSettings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/taskSettings.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/taskCreator/taskTags.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taskCreator/taskTags.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/taskListConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/taskListConstants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/tasksReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Search.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/timer/Timer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/timer/Timer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/userDataReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/userDataReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/navBar/navBar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/navBar/navBar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/svg/completeButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/createTaskButton.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/svg/navBarIcons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/navBarIcons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -162,6 +141,7 @@
       <workItem from="1574197644032" duration="121000" />
       <workItem from="1574198531569" duration="1749000" />
       <workItem from="1574243877138" duration="408000" />
+      <workItem from="1574244287016" duration="4919000" />
     </task>
     <servers />
   </component>

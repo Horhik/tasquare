@@ -22,8 +22,8 @@ const initialState = {
   startTimer: new Date(),
   endTimer: new Date(),
   timerDuration: {
-    minutes: 5,
-    seconds: 44
+    minutes: 25,
+    seconds:0,
   }
 };
 
