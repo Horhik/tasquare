@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8420f9f3-59bc-445a-b3a7-5ff5ae286fb4" name="Default Changelist" comment="add date and time picker&#10;*fix tag selector style bug&#10;*add sending date and time info to tag">
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/userActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/userActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navBar/pomodoro.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navBar/pomodoro.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navBar/timerControl.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navBar/timerControl.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/timer/Timer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/timer/Timer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/tabConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/tabConstants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/timerActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/timerActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/userDataReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/userDataReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/timer-tab/timer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/timer-tab/timer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/navBarIcons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/navBarIcons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/timerPlaySVG.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/timerPlaySVG.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +48,7 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\horhi\Documents\GitHub\tasquare\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -141,7 +147,8 @@
       <workItem from="1574197644032" duration="121000" />
       <workItem from="1574198531569" duration="1749000" />
       <workItem from="1574243877138" duration="408000" />
-      <workItem from="1574244287016" duration="4919000" />
+      <workItem from="1574244287016" duration="15401000" />
+      <workItem from="1574341704033" duration="912000" />
     </task>
     <servers />
   </component>

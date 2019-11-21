@@ -8,7 +8,17 @@
     position: absolute;
     margin: 0 auto;
     font-size: 20vw;
-    top: calc(50% - 15vw);
+    top: calc(50% - 13vw);
     max-font-size: 300px;
+    color: $dark-font;
+  }
+}
+.timer__tab{
+  &:focus, &:hover{
+    opacity: 1;
+    transform: scale(0.9);
+  }
+  &:active{
+
   }
 }

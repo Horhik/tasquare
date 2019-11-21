@@ -11,7 +11,7 @@ const TimerControl = props => {
         changeControlState(!onTimeFlow);
         props.playStopTimer();
       }}
-      className={"nav-bar__item add-task-btn"}
+      className={"nav-bar__item add-task-btn timer__tab"}
     >
       {!props.timerActive ? <TimerPlaySVG /> : <TimerStopSVG />}
     </button>

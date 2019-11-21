@@ -6,7 +6,7 @@ import { TIMER } from "../../constants/tabConstants";
 
 const Pomodoro = props => {
   return (
-    <a onClick={() => props.switchTab(TIMER)} className={"nav__timer"}>
+    <a href={'#timer'}  onClick={() => props.switchTab(TIMER)} className={"nav__timer"}>
       {pomodoroIcon}
     </a>
   );

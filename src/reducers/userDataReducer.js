@@ -7,8 +7,8 @@ import {
   SWITCH_TAB
 } from "../constants/taskListConstants";
 import { TASKS, TIMER } from "../constants/tabConstants";
-import { startTimer } from "../actions/userActions";
-import { PLAY_STOP_TIMER } from "../constants/timerActions";
+import {showTimerProgress, startTimer} from "../actions/userActions";
+import {PLAY_STOP_TIMER, SHOW_TIMER_PROGRES} from "../constants/timerActions";
 const { IU } = priorities;
 const uuid = require("uuid/v4");
 const initialState = {
@@ -21,6 +21,7 @@ const initialState = {
   playStopTimer: false,
   startTimer: new Date(),
   endTimer: new Date(),
+  timerProgress: 360,
   timerDuration: {
     minutes: 25,
     seconds:0,
@@ -75,6 +76,9 @@ const userData = (state = initialState, action) => {
         return { ...state, playStopTimer: !state.playStopTimer };
       }
       return { ...state, playStopTimer: !state.playStopTimer };
+    case SHOW_TIMER_PROGRES:
+      const duration = state.timerDuration.minutes * 60 + state.timerDuration.seconds
+      return {...state, timerProgress: action.sec / duration * 360}
     default:
       return state;
   }

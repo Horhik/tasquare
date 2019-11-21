@@ -4,7 +4,7 @@ import {
   SWITCH_TAB,
   START_TIMER
 } from "../constants/taskListConstants";
-import { PLAY_STOP_TIMER } from "../constants/timerActions";
+import {PLAY_STOP_TIMER, SHOW_TIMER_PROGRES} from "../constants/timerActions";
 
 export const changeFilterPriority = priority => ({
   type: CHANGE_SHOW_PRIORITY_FILTER,
@@ -28,3 +28,7 @@ export const startTimer = time => ({
 export const playStopTimer = () => ({
   type: PLAY_STOP_TIMER
 });
+export const showTimerProgress = (sec) => ({
+  type: SHOW_TIMER_PROGRES,
+  sec
+})
