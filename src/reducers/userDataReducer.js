@@ -4,11 +4,15 @@ import {
   CHANGE_SHOW_PRIORITY_FILTER,
   COMPLETE_TASK,
   START_TIMER,
-  SWITCH_TAB
+  SWITCH_TAB,
+  UPDATE_TIME
 } from "../constants/taskListConstants";
-import { TASKS, TIMER } from "../constants/tabConstants";
-import {showTimerProgress, startTimer} from "../actions/userActions";
-import {PLAY_STOP_TIMER, SHOW_TIMER_PROGRES} from "../constants/timerActions";
+import { TIMER } from "../constants/tabConstants";
+import {} from "../actions/userActions";
+import {
+  PLAY_STOP_TIMER,
+  UPDATE_USER_STATE
+} from "../constants/timerConstants";
 const { IU } = priorities;
 const uuid = require("uuid/v4");
 const initialState = {
@@ -21,10 +25,17 @@ const initialState = {
   playStopTimer: false,
   startTimer: new Date(),
   endTimer: new Date(),
+  timerAlreadyStart: false,
   timerProgress: 360,
+  initialDuration: {
+    minutes: 25,
+    seconds: 0,
+    fullSec: 25 * 60 + 0
+  },
   timerDuration: {
     minutes: 25,
-    seconds:0,
+    seconds: 0,
+    fullSec: 25 * 60 + 0
   }
 };
 
@@ -76,9 +87,28 @@ const userData = (state = initialState, action) => {
         return { ...state, playStopTimer: !state.playStopTimer };
       }
       return { ...state, playStopTimer: !state.playStopTimer };
-    case SHOW_TIMER_PROGRES:
-      const duration = state.timerDuration.minutes * 60 + state.timerDuration.seconds
-      return {...state, timerProgress: action.sec / duration * 360}
+    // case SHOW_TIMER_PROGRES:
+    // const duration = state.timerDuration.minutes * 60 + state.timerDuration.seconds
+    // return {...state, timerProgress: action.sec / duration * 360}
+    case UPDATE_TIME:
+      const duration =
+        state.initialDuration.minutes * 60 + state.initialDuration.seconds;
+      const time = {
+        minutes: Math.floor(action.props / 60),
+        seconds: action.props % 60,
+        fullSec: action.props
+      };
+      return {
+        ...state,
+        timerDuration: time,
+        timerProgress: (time.fullSec / duration) * 360
+      };
+    case UPDATE_USER_STATE:
+      return {
+        ...state,
+        ...action.payload
+      };
+
     default:
       return state;
   }

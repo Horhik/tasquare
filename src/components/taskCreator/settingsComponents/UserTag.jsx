@@ -41,10 +41,7 @@ const UserTag = props => {
 };
 //TODO create DnD function of deleting tags from userTags and currentTask
 //TODO create search function then user click on tag in made up tusk
-export default connect(
-  state => ({}),
-  {
-    addTagById,
-    deleteTagById
-  }
-)(UserTag);
+export default connect(state => ({}), {
+  addTagById,
+  deleteTagById
+})(UserTag);

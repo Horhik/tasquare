@@ -2,9 +2,10 @@ import {
   CHANGE_SHOW_PRIORITY_FILTER,
   COMPLETE_TASK,
   SWITCH_TAB,
-  START_TIMER
+  START_TIMER,
+    UPDATE_TIME
 } from "../constants/taskListConstants";
-import {PLAY_STOP_TIMER, SHOW_TIMER_PROGRES} from "../constants/timerActions";
+import {PLAY_STOP_TIMER, SHOW_TIMER_PROGRES, UPDATE_USER_STATE} from "../constants/timerConstants";
 
 export const changeFilterPriority = priority => ({
   type: CHANGE_SHOW_PRIORITY_FILTER,
@@ -31,4 +32,14 @@ export const playStopTimer = () => ({
 export const showTimerProgress = (sec) => ({
   type: SHOW_TIMER_PROGRES,
   sec
+})
+
+export const updateTime = (props) => ({
+  type: UPDATE_TIME,
+  props
+})
+
+export const updateUserState = (payload) => ({
+  type: UPDATE_USER_STATE,
+  payload
 })
