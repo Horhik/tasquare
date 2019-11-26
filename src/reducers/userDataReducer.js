@@ -27,15 +27,17 @@ const initialState = {
   endTimer: new Date(),
   timerAlreadyStart: false,
   timerProgress: 360,
+  workingTimer: true, //true is 25:00 minutes -> working mode //false is 5:00 -> relax mode
+  chandeDuration: false,
   initialDuration: {
     minutes: 25,
     seconds: 0,
-    fullSec: 25 * 60 + 0
+    fullSec: 25 * 60
   },
   timerDuration: {
     minutes: 25,
     seconds: 0,
-    fullSec: 25 * 60 + 0
+    fullSec: 25 * 60
   }
 };
 

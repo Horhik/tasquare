@@ -44,6 +44,11 @@ const Timer = props => {
             rotation={-90}
             lineJoin={"round"}
             angle={props.timerProgress}
+
+            shadowEnabled={true}
+            shadowOpacity={0.25}
+            shadowOffsetY={4}
+            shadowBlur={4}
           />
         </Layer>
       </Stage>
