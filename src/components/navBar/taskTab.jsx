@@ -11,9 +11,6 @@ const TaskTab = props => {
     </a>
   );
 };
-export default connect(
-  null,
-  {
-    switchTab
-  }
-)(TaskTab);
+export default connect(null, {
+  switchTab
+})(TaskTab);

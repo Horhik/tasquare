@@ -10,6 +10,7 @@ import {
 import { TIMER } from "../constants/tabConstants";
 import {} from "../actions/userActions";
 import {
+  NEXT_TIMER,
   PLAY_STOP_TIMER,
   UPDATE_USER_STATE
 } from "../constants/timerConstants";
@@ -28,7 +29,17 @@ const initialState = {
   timerAlreadyStart: false,
   timerProgress: 360,
   workingTimer: true, //true is 25:00 minutes -> working mode //false is 5:00 -> relax mode
-  chandeDuration: false,
+  changeDuration: false,
+  workingDuration: {
+    minutes: 25,
+    seconds: 0,
+    fullSec: 25 * 60
+  },
+  relaxDuration: {
+    minutes: 5,
+    seconds: 0,
+    fullSec: 5 * 60
+  },
   initialDuration: {
     minutes: 25,
     seconds: 0,
@@ -104,6 +115,25 @@ const userData = (state = initialState, action) => {
         ...state,
         timerDuration: time,
         timerProgress: (time.fullSec / duration) * 360
+      };
+    case NEXT_TIMER:
+      const newDuration = {
+        minutes: !state.workingTimer
+          ? state.relaxDuration.minutes
+          : state.workingDuration.minutes,
+        seconds: !state.workingTimer
+          ? state.relaxDuration.seconds
+          : state.workingDuration.seconds,
+        fullSec: !state.workingTimer
+          ? state.relaxDuration.fullSec
+          : state.workingDuration.fullSec
+      };
+      return {
+        ...state,
+        workingTimer: !state.workingTimer,
+        timerProgress: 360,
+        timerDuration: newDuration,
+        initialDuration: newDuration
       };
     case UPDATE_USER_STATE:
       return {

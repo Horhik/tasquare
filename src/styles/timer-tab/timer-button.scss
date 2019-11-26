@@ -1,0 +1,25 @@
+.timer__button{
+  border: 0;
+  background-color: $main-color;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
+  &--rounded{
+    position: fixed;
+    bottom: 12vh;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items:center ;
+  }
+}
+
+.timer__stop{
+  left: calc(50vw - 35px - 70px);
+}
+.timer__next-timer{
+  left: calc(50vw - 35px + 70px);
+  padding-left: 15px;
+}

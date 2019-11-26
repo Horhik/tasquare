@@ -3,9 +3,14 @@ import {
   COMPLETE_TASK,
   SWITCH_TAB,
   START_TIMER,
-    UPDATE_TIME
+  UPDATE_TIME
 } from "../constants/taskListConstants";
-import {PLAY_STOP_TIMER, SHOW_TIMER_PROGRES, UPDATE_USER_STATE} from "../constants/timerConstants";
+import {
+  NEXT_TIMER,
+  PLAY_STOP_TIMER,
+  SHOW_TIMER_PROGRES,
+  UPDATE_USER_STATE
+} from "../constants/timerConstants";
 
 export const changeFilterPriority = priority => ({
   type: CHANGE_SHOW_PRIORITY_FILTER,
@@ -29,17 +34,21 @@ export const startTimer = time => ({
 export const playStopTimer = () => ({
   type: PLAY_STOP_TIMER
 });
-export const showTimerProgress = (sec) => ({
+export const showTimerProgress = sec => ({
   type: SHOW_TIMER_PROGRES,
   sec
-})
+});
 
-export const updateTime = (props) => ({
+export const updateTime = props => ({
   type: UPDATE_TIME,
   props
-})
+});
 
-export const updateUserState = (payload) => ({
+export const updateUserState = payload => ({
   type: UPDATE_USER_STATE,
   payload
-})
+});
+
+export const switchTimer = () => ({
+  type: NEXT_TIMER
+});

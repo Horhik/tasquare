@@ -6,14 +6,15 @@ import { TIMER } from "../../constants/tabConstants";
 
 const Pomodoro = props => {
   return (
-    <a href={'#timer'}  onClick={() => props.switchTab(TIMER)} className={"nav__timer"}>
+    <a
+      href={"#timer"}
+      onClick={() => props.switchTab(TIMER)}
+      className={"nav__timer"}
+    >
       {pomodoroIcon}
     </a>
   );
 };
-export default connect(
-  null,
-  {
-    switchTab
-  }
-)(Pomodoro);
+export default connect(null, {
+  switchTab
+})(Pomodoro);
