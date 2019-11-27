@@ -7,11 +7,12 @@ import {
   SWITCH_TAB,
   UPDATE_TIME
 } from "../constants/taskListConstants";
-import { TIMER } from "../constants/tabConstants";
+import { TIMER, TASKS } from "../constants/tabConstants";
 import {} from "../actions/userActions";
 import {
   NEXT_TIMER,
   PLAY_STOP_TIMER,
+  RESET_TIMER,
   UPDATE_USER_STATE
 } from "../constants/timerConstants";
 const { IU } = priorities;
@@ -22,7 +23,7 @@ const initialState = {
   completedTasks: [],
   reminders: [],
   currentTaskFilter: IU,
-  currentTab: TIMER, //TASKS,
+  currentTab: TASKS, //TIMER, //
   playStopTimer: false,
   startTimer: new Date(),
   endTimer: new Date(),
@@ -118,13 +119,13 @@ const userData = (state = initialState, action) => {
       };
     case NEXT_TIMER:
       const newDuration = {
-        minutes: !state.workingTimer
+        minutes: state.workingTimer
           ? state.relaxDuration.minutes
           : state.workingDuration.minutes,
-        seconds: !state.workingTimer
+        seconds: state.workingTimer
           ? state.relaxDuration.seconds
           : state.workingDuration.seconds,
-        fullSec: !state.workingTimer
+        fullSec: state.workingTimer
           ? state.relaxDuration.fullSec
           : state.workingDuration.fullSec
       };
@@ -133,12 +134,30 @@ const userData = (state = initialState, action) => {
         workingTimer: !state.workingTimer,
         timerProgress: 360,
         timerDuration: newDuration,
-        initialDuration: newDuration
+        initialDuration: newDuration,
+        playStopTimer: false
       };
     case UPDATE_USER_STATE:
       return {
         ...state,
         ...action.payload
+      };
+    case RESET_TIMER:
+      return {
+        ...state,
+        playStopTimer: false,
+        timerDuration: {
+          minutes: state.workingTimer
+            ? state.workingDuration.minutes
+            : state.relaxDuration.minutes,
+          seconds: state.workingTimer
+            ? state.workingDuration.seconds
+            : state.relaxDuration.seconds,
+          fullSec: state.workingTimer
+            ? state.workingDuration.fullSec
+            : state.relaxDuration.fullSec
+        },
+        timerProgress: 360
       };
 
     default:

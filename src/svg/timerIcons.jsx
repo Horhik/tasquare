@@ -1,15 +1,33 @@
-import React from 'react'
+import React from "react";
 
 export const nextTimer = (
-        <svg width="37" height="52" viewBox="0 0 37 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 11C1 9.34315 2.34315 8 4 8C5.65685 8 7 9.34315 7 11V41C7 42.6569 5.65685 44 4 44C2.34315 44 1 42.6569 1 41V11Z" fill="white"/>
-            <path d="M33.172 22.8939C35.1449 24.4947 35.1449 27.5053 33.172 29.1061L15.7703 43.226C13.1558 45.3474 9.25 43.4868 9.25 40.1199L9.25 11.8801C9.25 8.51321 13.1558 6.65257 15.7703 8.77401L33.172 22.8939Z" fill="white"/>
-        </svg>
+  <svg
+    className={"timer__next-timer--svg"}
+    width="41"
+    height="43"
+    viewBox="0 0 41 43"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M34 7.5C34 5.567 35.567 4 37.5 4V4C39.433 4 41 5.567 41 7.5V36.5C41 38.433 39.433 40 37.5 40V40C35.567 40 34 38.433 34 36.5V7.5Z"
+      fill="white"
+    />
+    <path
+      d="M28.7702 16.2779C32.8308 18.5753 32.8308 24.4247 28.7702 26.7221L8.9546 37.9336C4.95483 40.1966 -2.58442e-06 37.3071 -2.38354e-06 32.7115L-1.4034e-06 10.2885C-1.20252e-06 5.69293 4.95483 2.80339 8.95461 5.06642L28.7702 16.2779Z"
+      fill="white"
+    />
+  </svg>
+);
 
-    )
-
-export const resetTimer = (
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="40" height="40" rx="10" fill="white"/>
-        </svg>
-    )
+export const resetTimerButton = (
+  <svg
+    width="40"
+    height="40"
+    viewBox="0 0 40 40"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect width="40" height="40" rx="10" fill="white" />
+  </svg>
+);

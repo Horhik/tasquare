@@ -1,31 +1,16 @@
 import React from "react";
 import { connect } from "react-redux";
-import { updateUserState } from "../../actions/userActions";
-import { resetTimer } from "../../svg/timerIcons";
+import { resetTimer } from "../../actions/userActions";
+import { resetTimerButton } from "../../svg/timerIcons";
 
 const ResetTimer = props => {
   return (
     <button
       type={"button"}
       className={"timer__button   timer__button--rounded timer__stop"}
-      onClick={() =>
-        props.resetTimer({
-          playStopTimer: false,
-          timerDuration: {
-            minutes: props.isWorking
-              ? props.working.minutes
-              : props.relax.minutes,
-            seconds: props.isWorking
-              ? props.working.seconds
-              : props.relax.seconds,
-            fullSec: props.isWorking
-              ? props.working.fullSec
-              : props.relax.fullSec
-          }
-        })
-      }
+      onClick={() => props.resetTimer()}
     >
-      {resetTimer}
+      {resetTimerButton}
     </button>
   );
 };
@@ -36,6 +21,6 @@ export default connect(
     isWorking: state.userData.workingTimer
   }),
   {
-    resetTimer: updateUserState
+    resetTimer: resetTimer
   }
 )(ResetTimer);

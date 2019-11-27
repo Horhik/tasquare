@@ -4,26 +4,32 @@ import { Stage, Arc, Layer } from "react-konva";
 import {
   showTimerProgress,
   updateTime,
-  updateUserState
+  updateUserState,
+  switchTimer
 } from "../../actions/userActions";
 
 const Timer = props => {
   const mainColor = getComputedStyle(document.documentElement).getPropertyValue(
     "--main-color"
   );
+  const secondColor = getComputedStyle(
+    document.documentElement
+  ).getPropertyValue("--second-color");
   const maxSize = window.innerWidth > 600 ? 600 : window.innerWidth;
   const size = maxSize - 24;
   const [wrappedInterval, setWrap] = useState(Number);
   useEffect(() => {
     if (props.timerActive && !props.alreadyStart) {
-      console.log(props.alreadyStart, "start ");
       props.updateUserState({ timerAlreadyStart: true });
       setWrap(
         setInterval(() => {
-          props.updateTime(props.duration.fullSec--);
+          if (props.duration.fullSec < 0) {
+            props.switchTimer();
+          } else {
+            props.updateTime(props.duration.fullSec--);
+          }
         }, 1000)
       );
-      console.log(wrappedInterval);
     } else if (!props.timerActive) {
       console.log(wrappedInterval);
       clearInterval(wrappedInterval);
@@ -37,7 +43,9 @@ const Timer = props => {
           <Arc
             x={size / 2}
             y={size / 2}
-            stroke={`hsl(${mainColor}, 50%, 50%)`}
+            stroke={
+              props.onWorkingState ? `hsl(${mainColor}, 50%, 50%)` : secondColor
+            }
             strokeWidth={12}
             innerRadius={size / 2 - 12}
             outerRadius={size / 2 - 12}
@@ -52,8 +60,7 @@ const Timer = props => {
         </Layer>
       </Stage>
       <span className="timer__time">
-        {/*props.timerActive
-          ?*/ `${
+        {`${
           props.duration.minutes.toString().length === 1
             ? `0${props.duration.minutes}`
             : props.duration.minutes
@@ -61,16 +68,7 @@ const Timer = props => {
           props.duration.seconds.toString().length === 1
             ? `0${props.duration.seconds}`
             : props.duration.seconds
-        }` /*
-          : `${
-              props.duration.minutes.toString().length === 1
-                ? `0${props.duration.minutes}`
-                : props.duration.minutes
-            }:${
-              props.duration.seconds.toString().length === 1
-                ? `0${props.duration.seconds}`
-                : props.duration.seconds
-            }`*/}
+        }`}
       </span>
     </div>
   );
@@ -81,11 +79,13 @@ export default connect(
     timerActive: state.userData.playStopTimer,
     duration: state.userData.timerDuration,
     timerProgress: state.userData.timerProgress,
-    alreadyStart: state.userData.timerAlreadyStart
+    alreadyStart: state.userData.timerAlreadyStart,
+    onWorkingState: state.userData.workingTimer
   }),
   {
     showTimerProgress,
     updateTime,
-    updateUserState
+    updateUserState,
+    switchTimer
   }
 )(Timer);

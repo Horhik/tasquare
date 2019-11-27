@@ -8,6 +8,7 @@ import {
 import {
   NEXT_TIMER,
   PLAY_STOP_TIMER,
+  RESET_TIMER,
   SHOW_TIMER_PROGRES,
   UPDATE_USER_STATE
 } from "../constants/timerConstants";
@@ -51,4 +52,8 @@ export const updateUserState = payload => ({
 
 export const switchTimer = () => ({
   type: NEXT_TIMER
+});
+
+export const resetTimer = () => ({
+  type: RESET_TIMER
 });

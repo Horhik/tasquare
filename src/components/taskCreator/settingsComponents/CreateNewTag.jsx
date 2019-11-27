@@ -1,16 +1,16 @@
-import React from 'react';
+import React from "react";
 
-import { connect } from 'react-redux';
+import { connect } from "react-redux";
 
-import { PlusIcon } from '../../../svg/navBarIcons';
+import { PlusIcon } from "../../../svg/navBarIcons";
 
 import {
   createNewTag,
   updateState
-} from './../../../actions/taskCreatorActions';
+} from "./../../../actions/taskCreatorActions";
 
-import { HuePicker } from 'react-color';
-import Tag from '../../Tag';
+import { HuePicker } from "react-color";
+import Tag from "../../Tag";
 
 class CreateNewTag extends React.Component {
   constructor(props) {
@@ -41,7 +41,7 @@ class CreateNewTag extends React.Component {
             <HuePicker
               color={this.state.tagColor}
               onChange={e => this.setColor(e)}
-              width={'50vw'}
+              width={"50vw"}
             />
           </div>
         ) : (
@@ -50,7 +50,7 @@ class CreateNewTag extends React.Component {
             type="button"
             className="tag-bar__button tag-bar__new-tag-button"
           >
-            <PlusIcon color={'#C0C0C0'} />;
+            <PlusIcon color={"#C0C0C0"} />;
           </button>
         )}
       </div>
