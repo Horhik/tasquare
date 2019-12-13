@@ -1,15 +1,26 @@
-import React from 'react'
-import {connect} from 'react-redux';
+import React from "react";
+import { connect } from "react-redux";
+import { resetTimer } from "../../actions/userActions";
+import { resetTimerButton } from "../../svg/timerIcons";
 
 const ResetTimer = props => {
-    return (
-        <button type={'button'}
-        className={'timer__button timer__stop'}
-        onClick={() => resetTimer}
-
-        />
-    )
-}
-export default connect(null, {
-
-})(ResetTimer)
+  return (
+    <button
+      type={"button"}
+      className={"timer__button   timer__button--rounded timer__stop"}
+      onClick={() => props.resetTimer()}
+    >
+      {resetTimerButton}
+    </button>
+  );
+};
+export default connect(
+  state => ({
+    working: state.userData.workingDuration,
+    relax: state.userData.relaxDuration,
+    isWorking: state.userData.workingTimer
+  }),
+  {
+    resetTimer: resetTimer
+  }
+)(ResetTimer);

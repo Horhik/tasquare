@@ -49,6 +49,7 @@ class taskCreator extends React.Component {
       if (text === " " || text === " #" || text === "#" || hasTag) {
         alert("something wrong with you tag");
         //TODO show warning "tag is already Exists"
+        //TODO delete tag if content only "#"
       } else {
         this.props.appendNewTag({
           id: `#tag:$${uuid("v4")}`,

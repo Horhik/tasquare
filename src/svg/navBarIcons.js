@@ -125,38 +125,126 @@ export const pomodoroIcon = (
   </svg>
 );
 
-export const loupe = (
+export const statistic = (
   <svg
-    width="39"
-    height="39"
-    viewBox="0 0 39 39"
+    width="34"
+    height="38"
+    viewBox="0 0 34 38"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     <g filter="url(#filter0_d)">
       <path
-        d="M35.2665 29.6776L28.4642 22.8756C30.1035 20.5092 30.9236 17.8711 30.9236 14.9628C30.9236 13.0722 30.5565 11.264 29.8224 9.53876C29.0889 7.8132 28.0972 6.32589 26.8478 5.07649C25.5984 3.82708 24.1113 2.83538 22.3861 2.10173C20.6603 1.36787 18.8523 1.00098 16.9617 1.00098C15.0712 1.00098 13.2631 1.36787 11.5378 2.10173C9.81222 2.83538 8.32491 3.82708 7.07551 5.07649C5.82597 6.32589 4.83441 7.81347 4.10069 9.53876C3.3669 11.2642 3 13.0722 3 14.9628C3 16.8532 3.3669 18.6608 4.10069 20.3865C4.83434 22.1118 5.82597 23.5989 7.07551 24.8483C8.32491 26.0981 9.8125 27.0894 11.5378 27.8235C13.2633 28.5572 15.0712 28.924 16.9617 28.924C19.8706 28.924 22.5083 28.1039 24.8749 26.4648L31.6771 33.247C32.1531 33.7493 32.7473 34.0006 33.4618 34.0006C34.1493 34.0006 34.7446 33.7494 35.2466 33.247C35.7488 32.7448 36.0001 32.1498 36.0001 31.4624C36.0003 30.7621 35.7557 30.1668 35.2665 29.6776ZM23.2385 21.2389C21.4999 22.9777 19.4078 23.8471 16.9617 23.8471C14.5159 23.8471 12.4238 22.9775 10.6851 21.2389C8.94645 19.5004 8.07714 17.4085 8.07714 14.9624C8.07714 12.5166 8.94666 10.4242 10.6851 8.68584C12.4235 6.94708 14.5159 6.07784 16.9617 6.07784C19.4075 6.07784 21.4997 6.94743 23.2385 8.68584C24.9773 10.4242 25.8466 12.5166 25.8466 14.9624C25.8466 17.4085 24.977 19.5004 23.2385 21.2389Z"
+        d="M16 30C14.8954 30 14 29.1046 14 28L14 15C14 13.8954 14.8954 13 16 13L18 13C19.1046 13 20 13.8954 20 15L20 28C20 29.1046 19.1046 30 18 30L16 30Z"
+        fill="#850EE2"
+      />
+    </g>
+    <g filter="url(#filter1_d)">
+      <rect
+        x="24"
+        y="30"
+        width="30"
+        height="6"
+        rx="2"
+        transform="rotate(-90 24 30)"
+        fill="#850EE2"
+      />
+    </g>
+    <g filter="url(#filter2_d)">
+      <rect
+        x="4"
+        y="30"
+        width="26"
+        height="6"
+        rx="2"
+        transform="rotate(-90 4 30)"
         fill="#850EE2"
       />
     </g>
     <defs>
       <filter
         id="filter0_d"
-        x="0"
-        y="0.000976562"
-        width="39.0001"
-        height="38.9997"
+        x="10"
+        y="13"
+        width="14"
+        height="25"
         filterUnits="userSpaceOnUse"
-        colorInterpolationFilters="sRGB"
+        color-interpolation-filters="sRGB"
       >
-        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
         />
-        <feOffset dy="2" />
-        <feGaussianBlur stdDeviation="1.5" />
+        <feOffset dy="4" />
+        <feGaussianBlur stdDeviation="2" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="BackgroundImageFix"
+          result="effect1_dropShadow"
+        />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="effect1_dropShadow"
+          result="shape"
+        />
+      </filter>
+      <filter
+        id="filter1_d"
+        x="20"
+        y="0"
+        width="14"
+        height="38"
+        filterUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB"
+      >
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        />
+        <feOffset dy="4" />
+        <feGaussianBlur stdDeviation="2" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="BackgroundImageFix"
+          result="effect1_dropShadow"
+        />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="effect1_dropShadow"
+          result="shape"
+        />
+      </filter>
+      <filter
+        id="filter2_d"
+        x="0"
+        y="4"
+        width="14"
+        height="34"
+        filterUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB"
+      >
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        />
+        <feOffset dy="4" />
+        <feGaussianBlur stdDeviation="2" />
         <feColorMatrix
           type="matrix"
           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"

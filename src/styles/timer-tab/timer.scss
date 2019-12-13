@@ -13,12 +13,14 @@
     color: $dark-font;
   }
 }
-.timer__tab{
-  &:focus, &:hover{
+.timer__tab {
+  &:focus,
+  &:hover {
     opacity: 1;
     transform: scale(0.9);
   }
-  &:active{
-
+  &:active {
   }
 }
+
+@import "./timer-button";
