@@ -11,11 +11,14 @@ const TimerTab = props => {
       <div className="timer--wrapper">
         <Timer />
         <div>
-          {props.stop ? <ResetTimer /> : <ChangeDurationButton />}
+          {props.stop || props.play ? <ResetTimer /> : <ChangeDurationButton />}
           <NextTimer />
         </div>
       </div>
     </section>
   );
 };
-export default connect()(TimerTab);
+export default connect(state => ({
+  stop: !state.timer.stop,
+  play: state.timer.play
+}))(TimerTab);
