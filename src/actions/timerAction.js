@@ -2,10 +2,6 @@ import {
   PLAY_STOP_TIMER,
   NEXT_TIMER,
   RESET_TIMER,
-  UPDATE_USER_STATE,
-  UPDATE_TIME,
-  SHOW_TIMER_PROGRES,
-  START_TIMER,
   TICK,
   MARK_TIMER
 } from "../constants/timerConstants";

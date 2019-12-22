@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { Stage, Arc, Layer } from "react-konva";
 import { tick, switchTimer, setAlreadyStart } from "../../actions/timerAction";
@@ -12,7 +12,6 @@ const Timer = props => {
   ).getPropertyValue("--second-color");
   const maxSize = window.innerWidth > 600 ? 600 : window.innerWidth;
   const size = maxSize - 24;
-  const [wrappedInterval, setWrap] = useState(Number);
   useEffect(() => {
     console.log(props.alreadyStart);
     if (props.timerActive && !props.alreadyStart) {
@@ -26,6 +25,7 @@ const Timer = props => {
       clearInterval(props.clearID);
       props.setAlreadyStart(false, -1);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.timerActive]);
   return (
     <div className={"timer--inner"}>

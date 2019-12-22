@@ -5,6 +5,7 @@ import {
   COMPLETE_TASK,
   SWITCH_TAB
 } from "../constants/taskListConstants";
+// eslint-disable-next-line no-unused-vars
 import { TIMER, TASKS } from "../constants/tabConstants";
 import {} from "../actions/userActions";
 import { UPDATE_USER_STATE } from "../constants/timerConstants";
