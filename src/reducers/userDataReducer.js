@@ -3,18 +3,11 @@ import { priorities } from "../constants/priorities";
 import {
   CHANGE_SHOW_PRIORITY_FILTER,
   COMPLETE_TASK,
-  START_TIMER,
-  SWITCH_TAB,
-  UPDATE_TIME
+  SWITCH_TAB
 } from "../constants/taskListConstants";
 import { TIMER, TASKS } from "../constants/tabConstants";
 import {} from "../actions/userActions";
-import {
-  NEXT_TIMER,
-  PLAY_STOP_TIMER,
-  RESET_TIMER,
-  UPDATE_USER_STATE
-} from "../constants/timerConstants";
+import { UPDATE_USER_STATE } from "../constants/timerConstants";
 const { IU } = priorities;
 const uuid = require("uuid/v4");
 const initialState = {
@@ -23,34 +16,8 @@ const initialState = {
   completedTasks: [],
   reminders: [],
   currentTaskFilter: IU,
-  currentTab: TASKS, //TIMER, //
-  playStopTimer: false,
-  startTimer: new Date(),
-  endTimer: new Date(),
-  timerAlreadyStart: false,
-  timerProgress: 360,
-  workingTimer: true, //true is 25:00 minutes -> working mode //false is 5:00 -> relax mode
-  changeDuration: false,
-  workingDuration: {
-    minutes: 25,
-    seconds: 0,
-    fullSec: 25 * 60
-  },
-  relaxDuration: {
-    minutes: 5,
-    seconds: 0,
-    fullSec: 5 * 60
-  },
-  initialDuration: {
-    minutes: 25,
-    seconds: 0,
-    fullSec: 25 * 60
-  },
-  timerDuration: {
-    minutes: 25,
-    seconds: 0,
-    fullSec: 25 * 60
-  }
+  // currentTab: TIMER,
+  currentTab: TASKS
 };
 
 const userData = (state = initialState, action) => {
@@ -82,82 +49,11 @@ const userData = (state = initialState, action) => {
       };
     case SWITCH_TAB:
       return { ...state, currentTab: action.tab };
-    case START_TIMER:
-      alert(state.playStopTimer);
-      const startTime = Date.parse(new Date());
-      const endTime = new Date(
-        state.startTimer +
-          state.timerDuration.minutes * 60 * 1000 +
-          state.timerDuration.seconds * 1000
-      );
-      return {
-        ...state,
-        startTimer: startTime,
-        endTimer: endTime,
-        playStopTimer: !state.playStopTimer
-      };
-    case PLAY_STOP_TIMER:
-      if (state.playStopTimer) {
-        return { ...state, playStopTimer: !state.playStopTimer };
-      }
-      return { ...state, playStopTimer: !state.playStopTimer };
-    // case SHOW_TIMER_PROGRES:
-    // const duration = state.timerDuration.minutes * 60 + state.timerDuration.seconds
-    // return {...state, timerProgress: action.sec / duration * 360}
-    case UPDATE_TIME:
-      const duration =
-        state.initialDuration.minutes * 60 + state.initialDuration.seconds;
-      const time = {
-        minutes: Math.floor(action.props / 60),
-        seconds: action.props % 60,
-        fullSec: action.props
-      };
-      return {
-        ...state,
-        timerDuration: time,
-        timerProgress: (time.fullSec / duration) * 360
-      };
-    case NEXT_TIMER:
-      const newDuration = {
-        minutes: state.workingTimer
-          ? state.relaxDuration.minutes
-          : state.workingDuration.minutes,
-        seconds: state.workingTimer
-          ? state.relaxDuration.seconds
-          : state.workingDuration.seconds,
-        fullSec: state.workingTimer
-          ? state.relaxDuration.fullSec
-          : state.workingDuration.fullSec
-      };
-      return {
-        ...state,
-        workingTimer: !state.workingTimer,
-        timerProgress: 360,
-        timerDuration: newDuration,
-        initialDuration: newDuration,
-        playStopTimer: false
-      };
+
     case UPDATE_USER_STATE:
       return {
         ...state,
         ...action.payload
-      };
-    case RESET_TIMER:
-      return {
-        ...state,
-        playStopTimer: false,
-        timerDuration: {
-          minutes: state.workingTimer
-            ? state.workingDuration.minutes
-            : state.relaxDuration.minutes,
-          seconds: state.workingTimer
-            ? state.workingDuration.seconds
-            : state.relaxDuration.seconds,
-          fullSec: state.workingTimer
-            ? state.workingDuration.fullSec
-            : state.relaxDuration.fullSec
-        },
-        timerProgress: 360
       };
 
     default:

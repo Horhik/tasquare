@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import { Stage, Arc, Layer } from "react-konva";
-import {
-  showTimerProgress,
-  updateTime,
-  updateUserState,
-  switchTimer
-} from "../../actions/userActions";
+import { tick, switchTimer, setAlreadyStart } from "../../actions/timerAction";
 
 const Timer = props => {
   const mainColor = getComputedStyle(document.documentElement).getPropertyValue(
@@ -19,21 +14,17 @@ const Timer = props => {
   const size = maxSize - 24;
   const [wrappedInterval, setWrap] = useState(Number);
   useEffect(() => {
+    console.log(props.alreadyStart);
     if (props.timerActive && !props.alreadyStart) {
-      props.updateUserState({ timerAlreadyStart: true });
-      setWrap(
-        setInterval(() => {
-          if (props.duration.fullSec < 0) {
-            props.switchTimer();
-          } else {
-            props.updateTime(props.duration.fullSec--);
-          }
-        }, 1000)
-      );
-    } else if (!props.timerActive) {
-      console.log(wrappedInterval);
-      clearInterval(wrappedInterval);
-      props.updateUserState({ timerAlreadyStart: false });
+      const id = setInterval(() => {
+        props.tick();
+      }, 1000);
+      props.setAlreadyStart(true, id);
+    }
+    if (!props.timerActive) {
+      console.log(props.clearID);
+      clearInterval(props.clearID);
+      props.setAlreadyStart(false, -1);
     }
   }, [props.timerActive]);
   return (
@@ -76,16 +67,21 @@ const Timer = props => {
 
 export default connect(
   state => ({
-    timerActive: state.userData.playStopTimer,
-    duration: state.userData.timerDuration,
-    timerProgress: state.userData.timerProgress,
-    alreadyStart: state.userData.timerAlreadyStart,
-    onWorkingState: state.userData.workingTimer
+    timerActive: state.timer.play,
+    alreadyStart: state.timer.alreadyStart,
+    clearID: state.timer.clearID,
+    duration: {
+      minutes: state.timer.currentMinutes,
+      seconds: state.timer.currentSeconds,
+      fullSec: state.timer.fullCurrentInSeconds
+    },
+    timerProgress: state.timer.currentAngle,
+    stop: state.timer.stop,
+    onWorkingState: !state.timer.relaxMode
   }),
   {
-    showTimerProgress,
-    updateTime,
-    updateUserState,
-    switchTimer
+    tick,
+    switchTimer,
+    setAlreadyStart
   }
 )(Timer);

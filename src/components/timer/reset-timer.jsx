@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { resetTimer } from "../../actions/userActions";
+import { resetTimer } from "../../actions/timerAction";
 import { resetTimerButton } from "../../svg/timerIcons";
 
 const ResetTimer = props => {
@@ -8,7 +8,7 @@ const ResetTimer = props => {
     <button
       type={"button"}
       className={"timer__button   timer__button--rounded timer__stop"}
-      onClick={() => props.resetTimer()}
+      onClick={() => props.resetTimer(false)}
     >
       {resetTimerButton}
     </button>

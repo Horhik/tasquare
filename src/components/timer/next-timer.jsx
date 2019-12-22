@@ -1,14 +1,17 @@
 import React from "react";
 import { connect } from "react-redux";
 import { nextTimer } from "../../svg/timerIcons";
-import { switchTimer } from "../../actions/userActions";
+import { switchTimer, resetTimer } from "../../actions/timerAction";
 
 const NextTimer = props => {
   return (
     <button
       type={"button"}
       className={"timer__button  timer__button--rounded timer__next-timer"}
-      onClick={() => props.switchTimer()}
+      onClick={() => {
+        props.switchTimer();
+        props.resetTimer();
+      }}
     >
       {nextTimer}
     </button>
@@ -20,6 +23,7 @@ export default connect(
     workingMode: state.userData
   }),
   {
-    switchTimer
+    switchTimer,
+    resetTimer
   }
 )(NextTimer);
