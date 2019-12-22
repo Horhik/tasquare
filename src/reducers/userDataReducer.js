@@ -17,8 +17,8 @@ const initialState = {
   completedTasks: [],
   reminders: [],
   currentTaskFilter: IU,
-  // currentTab: TIMER,
-  currentTab: TASKS
+  currentTab: TIMER
+  // currentTab: TASKS
 };
 
 const userData = (state = initialState, action) => {

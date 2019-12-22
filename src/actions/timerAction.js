@@ -3,7 +3,10 @@ import {
   NEXT_TIMER,
   RESET_TIMER,
   TICK,
-  MARK_TIMER
+  MARK_TIMER,
+  CHANGE_DURATION,
+  SHOW_CHANGE_DURATION_FIELD,
+  HIDE_CHANGE_DURATION_FIELD
 } from "../constants/timerConstants";
 
 export const startTimer = time => ({
@@ -36,4 +39,16 @@ export const setAlreadyStart = (alreadyStart, clearNumber) => ({
   type: MARK_TIMER,
   alreadyStart,
   clearNumber
+});
+
+export const changeDuration = duration => ({
+  type: CHANGE_DURATION,
+  minutes: duration.minutes,
+  seconds: duration.seconds
+});
+export const showChangeDurationField = () => ({
+  type: SHOW_CHANGE_DURATION_FIELD
+});
+export const hideCHangeDurationField = () => ({
+  type: HIDE_CHANGE_DURATION_FIELD
 });

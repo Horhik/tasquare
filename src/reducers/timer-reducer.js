@@ -4,7 +4,9 @@ import {
   NEXT_TIMER,
   CHANGE_TIMER_DURATION,
   TICK,
-  MARK_TIMER
+  MARK_TIMER,
+  SHOW_CHANGE_DURATION_FIELD,
+  HIDE_CHANGE_DURATION_FIELD
 } from "../constants/timerConstants";
 
 const initialState = {
@@ -74,7 +76,17 @@ const timerReducer = (state = initialState, action) => {
         ...state
         // showChangeTimerDurationPopUp:
       };
-
+    case SHOW_CHANGE_DURATION_FIELD:
+      return {
+        ...state,
+        showChangeTimerDurationPopUp: true,
+        stop: true,
+        play: false
+      };
+    case HIDE_CHANGE_DURATION_FIELD:
+      return {
+        ...state
+      };
     case TICK:
       const fullSec = state.relaxMode
         ? state.fullRelaxInSeconds
