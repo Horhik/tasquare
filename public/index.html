@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content=" hsl( 270, 88%, 47%)" />
     <meta name="description" content="TODO APP" />
     <link rel="apple-touch-icon" href="logo.png" />
     <!--
@@ -22,14 +21,26 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <link href="https://fonts.googleapis.com/css?family=Sanchez&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sanchez&display=swap"
+      rel="stylesheet"
+    />
     <title>TaSquare</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-</body>
-</body>
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
 
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="/__/firebase/7.5.0/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="/__/firebase/7.5.0/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="/__/firebase/7.5.0/firebase-auth.js"></script>
+    <script src="/__/firebase/7.5.0/firebase-firestore.js"></script>
+  </body>
 </html>

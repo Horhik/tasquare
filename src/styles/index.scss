@@ -1,8 +1,7 @@
-@import './variables';
+@import "./variables";
 @import "./basic";
 //header
 @import "./header/header";
-
 
 //nav Bar
 @import "./navBar/navBar";
@@ -11,8 +10,9 @@
 @import "./taskCreator/taskCreator";
 
 //task
-@import './task/task';
+@import "./task/task";
 
+//timer
+@import "./timer-tab/timer";
 //color library
-@import './taskCreator/color-library';
-
+@import "./taskCreator/color-library";
