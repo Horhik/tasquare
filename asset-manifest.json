@@ -1,22 +1,15 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.b100e6da.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.c6996d0d.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.c6996d0d.chunk.js.map",
-    "runtime-main.js": "/react-gh-pages/static/js/runtime-main.dfff6f72.js",
-    "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.dfff6f72.js.map",
-    "static/js/2.17e9c6ff.chunk.js": "/react-gh-pages/static/js/2.17e9c6ff.chunk.js",
-    "static/js/2.17e9c6ff.chunk.js.map": "/react-gh-pages/static/js/2.17e9c6ff.chunk.js.map",
-    "index.html": "/react-gh-pages/index.html",
-    "precache-manifest.24fc5318ee407095a8e9973e419c0a99.js": "/react-gh-pages/precache-manifest.24fc5318ee407095a8e9973e419c0a99.js",
-    "service-worker.js": "/react-gh-pages/service-worker.js",
-    "static/css/main.b100e6da.chunk.css.map": "/react-gh-pages/static/css/main.b100e6da.chunk.css.map",
-    "static/media/logo.svg": "/react-gh-pages/static/media/logo.25bf045c.svg"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.dfff6f72.js",
-    "static/js/2.17e9c6ff.chunk.js",
-    "static/css/main.b100e6da.chunk.css",
-    "static/js/main.c6996d0d.chunk.js"
-  ]
+    "main.css": "/static/css/main.c9ea74fb.chunk.css",
+    "main.js": "/static/js/main.76846ec0.chunk.js",
+    "main.js.map": "/static/js/main.76846ec0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2ea04912.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2ea04912.js.map",
+    "static/js/2.5e3572c6.chunk.js": "/static/js/2.5e3572c6.chunk.js",
+    "static/js/2.5e3572c6.chunk.js.map": "/static/js/2.5e3572c6.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a91cf39d3ef6e8bcd9566b516329036c.js": "/precache-manifest.a91cf39d3ef6e8bcd9566b516329036c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.c9ea74fb.chunk.css.map": "/static/css/main.c9ea74fb.chunk.css.map"
+  }
 }
