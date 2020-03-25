@@ -1,6 +1,6 @@
 import React from "react";
 
-const completeButton =
+const createTaskButton =
     <svg fill="none" width={90} height={90}>
         <g filter="url(#prefix__filter0_d)">
             <path
@@ -47,4 +47,4 @@ const completeButton =
         </defs>
     </svg>
 
-export default completeButton;
+export default createTaskButton;
